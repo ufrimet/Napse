@@ -1,0 +1,124 @@
+[ {
+  "id" : "7fb62050-6102-3d6d-c300-0f0508356410",
+  "name" : "background_image",
+  "label" : "Background image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "04dafd4a-7067-0bab-51e2-0a6b7b135628",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "ed05c8ad-8f67-64d9-f288-dbd4289d8a59",
+  "name" : "separador",
+  "label" : "Separador",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Vector%209.png",
+    "alt" : "Vector 9",
+    "loading" : "lazy",
+    "width" : 36,
+    "height" : 11,
+    "max_width" : 36,
+    "max_height" : 11
+  }
+}, {
+  "id" : "ef991a41-9116-7e70-f35e-35a270e4802c",
+  "name" : "blog_field",
+  "label" : "Blog",
+  "required" : false,
+  "locked" : false,
+  "type" : "blog",
+  "default" : 40738398591
+}, {
+  "id" : "63be88bd-0964-14ef-b290-0e8916be4c67",
+  "name" : "tag_posts",
+  "label" : "Tag posts",
+  "help_text" : "Etiqueta de los posts. La nomenclatura seria por ejemplo: gestión-y-experiencia para la etiqueta (tag) Gestión y Experiencia",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "gestión-y-experiencia"
+}, {
+  "id" : "2766a7c3-799e-314e-cc3a-6892901c87b0",
+  "name" : "separador_color",
+  "label" : "Separador Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#FF0201",
+    "opacity" : 100
+  }
+}, {
+  "id" : "f3a7460b-1895-429b-6a50-b430afbd9bb8",
+  "name" : "carousel",
+  "label" : "Carousel",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "de623e7e-a8c3-d34a-a358-66335eb1152d",
+    "name" : "on_off",
+    "label" : "ON / OFF",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "5343509c-066d-d53e-26da-750b5c687b9e",
+    "name" : "speed",
+    "label" : "Speed",
+    "inline_help_text" : "miliseconds",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 2000,
+    "step" : 500,
+    "type" : "number",
+    "default" : 5000
+  }, {
+    "id" : "5cbd2f0f-72a5-c7ea-3903-7a5556b294be",
+    "name" : "carousel_id",
+    "label" : "Carousel ID",
+    "required" : false,
+    "locked" : true,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "dfz-carousel-templates"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "on_off" : false,
+    "speed" : 5000,
+    "carousel_id" : "dfz-carousel-templates"
+  }
+} ]

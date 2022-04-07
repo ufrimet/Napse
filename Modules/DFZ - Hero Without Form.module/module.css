@@ -1,0 +1,13 @@
+.hs-tiene_ecommerce_{
+  display: flex;
+  margin: 5px 0;
+}
+
+.hs-tiene_ecommerce_ ul{
+  display: flex;
+  margin: 0;
+}
+
+.legal-consent-container .hs-form-booleancheckbox-display>span{
+  font-size: 12px;
+}

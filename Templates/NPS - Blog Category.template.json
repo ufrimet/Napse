@@ -1,0 +1,316 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Napse/CSS/Style.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "<link rel=\"preload\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\">\n<noscript><link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css\"></noscript>\n\n<style>\n  .content-post-body {\n    padding-top: 0;\n  }\n  \n  @media(min-width: 1024px) {\n    .content-post-body {\n      padding-top: 150px;\n    }\n  }\n</style>",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_16169375234951045",
+        "label" : "NPS - Menu",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Menu",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Menu",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_16189296504111117",
+        "label" : "NPS - Violet Tags Menu Category",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "position: absolute; z-index: 1;",
+          "items" : [ {
+            "item_link" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "https://www.napse.global/prensa",
+                "type" : "EXTERNAL"
+              }
+            },
+            "item_name" : "Prensa"
+          }, {
+            "item_link" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "https://info.napse.global/categoria/gestion-y-experiencia",
+                "type" : "EXTERNAL"
+              }
+            },
+            "item_name" : "Gestión<br>y experiencia"
+          }, {
+            "item_link" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "https://info.napse.global/categoria/tecnologia-e-innovacion",
+                "type" : "EXTERNAL"
+              }
+            },
+            "item_name" : "Tecnología<br>e innovación"
+          }, {
+            "item_link" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "https://info.napse.global/categoria/tendencias-y-analisis",
+                "type" : "EXTERNAL"
+              }
+            },
+            "item_name" : "Tendencias<br>y análisis"
+          }, {
+            "item_link" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "https://info.napse.global/categoria/transformacion-digital",
+                "type" : "EXTERNAL"
+              }
+            },
+            "item_name" : "Transformación digital"
+          } ],
+          "name_category" : "Gestión y experiencia",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Violet Tags Menu Category",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Violet Tags Menu Category",
+          "wrapping_html" : "<style>\n  .hs-collapsed{\n    display: none !important;\n  }\n</style>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "position: absolute; z-index: 1;",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_16171329702953677",
+        "label" : "Grupo de módulos",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "content-post-body",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "background-color: #fff;",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1618950484854101",
+            "label" : "Module group",
+            "type" : "cell",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "padding: 50px 15px; max-width: 100%; width: 1024px; float: none; margin: 0 auto;",
+              "overrideable" : false,
+              "per_widget_wrapper_html" : "",
+              "wrapping_html" : ""
+            },
+            "rows" : [ {
+              "0" : {
+                "x" : 0,
+                "w" : 12,
+                "name" : "module_16189299017761199",
+                "label" : "NPS - Post Category",
+                "type" : "custom_widget",
+                "params" : {
+                  "css_class" : "",
+                  "css_id" : "",
+                  "css_id_str" : "",
+                  "css_style" : "",
+                  "draw_title" : {
+                    "alt" : "ondas-01",
+                    "height" : 400,
+                    "loading" : "lazy",
+                    "max_height" : 400,
+                    "max_width" : 400,
+                    "size_type" : "auto",
+                    "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/ondas-01.svg",
+                    "width" : 400
+                  },
+                  "overrideable" : true,
+                  "path" : "/Napse/Modules/NPS - Post Category",
+                  "per_widget_wrapper_html" : "",
+                  "schema_version" : 2,
+                  "widget_name" : "NPS - Post Category",
+                  "wrapping_html" : ""
+                },
+                "rows" : [ ],
+                "rowMetaData" : [ ],
+                "cells" : [ ],
+                "cssId" : "",
+                "cssClass" : "",
+                "cssStyle" : "",
+                "styles" : null,
+                "widgets" : [ ]
+              }
+            } ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "padding: 50px 15px; max-width: 100%; width: 1024px; float: none; margin: 0 auto;",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "content-post-body",
+        "cssStyle" : "background-color: #fff;",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_162125639990383",
+        "label" : "NPS - Suscripcion global",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Suscripcion global version 2",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Suscripcion global version 2",
+          "wrapping_html" : "<div id=\"form\">\n  {{ html }}\n</div>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1616680987960210",
+        "label" : "NPS - Footer",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Footer copy 2",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Footer copy 2",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

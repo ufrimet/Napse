@@ -1,0 +1,48 @@
+[ {
+  "id" : "4b66bda7-e230-3c04-ce15-427596dbf08e",
+  "name" : "carousel",
+  "label" : "Carousel",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "1946d229-a41c-5b02-bdb5-5c4dc6a7526e",
+    "name" : "on_off",
+    "label" : "ON / OFF",
+    "required" : false,
+    "locked" : false,
+    "display" : "toggle",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "662fba2e-3d34-9bde-f7ce-479a720f8657",
+    "name" : "speed",
+    "label" : "Speed",
+    "inline_help_text" : "miliseconds",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 2000,
+    "step" : 500,
+    "type" : "number",
+    "default" : 5000
+  }, {
+    "id" : "353cb665-cbaf-2f26-2e08-8c9f91d61f3d",
+    "name" : "carousel_id",
+    "label" : "Carousel ID",
+    "required" : false,
+    "locked" : true,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "dfz-carousel-templates"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "on_off" : false,
+    "speed" : 5000,
+    "carousel_id" : "dfz-carousel-templates"
+  }
+} ]

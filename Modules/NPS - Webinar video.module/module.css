@@ -1,0 +1,155 @@
+.hero-class{
+  min-height: 100vh;
+  max-height: 800px;
+  padding: 20px;
+}
+@media(max-height:500px){
+  .hero-class{
+    height: 800px;
+  }
+}
+
+.hero-class .container{
+  max-width: 660px;
+  text-align: center;
+}
+
+.hero-class .container h1{
+  font-size: 60px;
+}
+
+.hero-class .container h2{
+  font-size: 22px;
+  margin: 25px 0;
+}
+
+.hero-class .container .img-video-div img{
+  height: 100%;
+  max-height: 350px;
+  min-height: 250px;
+  margin: auto;
+}
+
+.hero-class .container a{
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #411E5A;
+  margin: 5% auto; /* 5% from the top and centered */
+  padding: 20px;
+  border-radius: 50px;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content h2{
+  text-align: center;
+  margin: 20px 0;
+}
+
+#contactModal{
+  display: none;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form{
+  margin: auto;
+}
+
+.hs_recaptcha{
+  width: 50% !important;
+}
+
+.actions{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hs-button{
+  width: 100px;
+  margin-left: 0;
+  height: 40px;
+  background-color: red;
+}
+
+.hs-submit{
+  width: auto !important;
+  margin: auto;
+}
+
+textarea,
+select,
+input[type=email],
+input[type=text],
+input[type=tel]{
+  width: 100% !important;
+}
+.submitted-message{
+  color: white !important;
+  font-size: 20px;
+  padding: 0 20px;
+  text-align: center;
+  max-width: 450px;
+}
+.left-side-lp h2{
+  max-width: 450px;
+}
+@media(max-width:767px){
+  .hs_recaptcha, .hs-submit{
+    width: 100%;
+  }
+  .actions{
+    justify-content: center;
+  }
+  
+  .modal-content {
+    width: 90%; 
+  }
+  
+  .hero-class .container h1 {
+    font-size: 40px;
+    margin-top: 30px;
+  }
+  
+  .hero-class .container h2{
+    font-size: 18px;
+  }
+  
+}
+
+@media(max-width:600px){
+  .hero-class .container .img-video-div img{
+    width: 100%;
+  }
+}

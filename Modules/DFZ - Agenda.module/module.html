@@ -1,0 +1,39 @@
+
+
+
+
+{# 2106 - Uriel Frimet #}
+
+<section class="agenda">
+    <div class="container">
+        <h3>{{ module.title }}</h3>
+        <img class="separador-v2" src="https://f.hubspotusercontent10.net/hubfs/9130015/Vector%209.png">
+        <div class="fechas">
+            {% for fecha in module.fechas %}
+                <div class="fecha">
+                    <div class="top">
+                        <img src="https://f.hubspotusercontent10.net/hubfs/9130015/Vector%20(21).png">
+                        <div class="info-fecha">
+                            <span>{{ fecha.number }}</span>
+                            <span>{{ fecha.mes }}</span>
+                        </div>
+                    </div>
+
+                    <div class="bottom">
+                        <a href="{{ fecha.link_webinar.url.href }}" {% if fecha.link_webinar.open_in_new_tab == true %} target="_blank" {% endif %}>{{ fecha.nombre_webinar }}</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<style>
+    .agenda{ 
+        background:url({{ module.background_image.src }}) no-repeat center;
+        background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -webkit-background-size: cover;
+    }
+</style>

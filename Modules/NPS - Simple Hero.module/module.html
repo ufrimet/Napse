@@ -1,0 +1,146 @@
+<style>
+  .hero-class{
+    height: 535px;
+  }
+  .hero-simple-container{
+    flex-direction: row !important;
+    justify-content: space-between;
+    margin: 50px auto !important;
+  }
+  .left-side-lp img{
+    width: 130px;
+  }
+  .left-side-lp h1{
+    font-size: 45px !important;
+  }
+  .left-side-lp h2{
+    margin-top: 20px;
+    font-size: 20px !important;
+  }
+  
+  .left-side-lp a.simple-radius-button{
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 5px 10px;
+  }
+      
+  @media only screen and (max-width: 1366px) {
+    .hero-class{
+      height: 450px;
+    }
+  }
+  #scrollTopBtn {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 9999; /* Make sure it does not overlap */
+    outline: none; /* Remove outline */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Rounded corners */
+    border-color: white;
+    width: 62px;
+    height: 62px;
+    filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.37));
+    background-color: #411e5a;
+    border-width: 1px;
+    border-style: solid;
+  }
+  #scrollTopBtn:hover {
+    opacity: .8;
+  }
+  @media(max-width: 1024px){
+    .left-side-lp h1{
+      font-size: 52px !important;
+    }
+    .left-side-lp h2{
+      font-size: 16px !important;
+    }
+  }
+  @media(max-width: 768px){
+    .hero-class{
+      height: auto !important;
+      padding: 30px 0;
+    }
+    .hero-simple-container{
+      flex-direction: column !important;
+      justify-content: center;
+    }
+    .left-side-lp{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 0 30px 0;
+    }
+  }
+</style>
+<div class="hero-class" style="background:url({{ module.background_image.src }}) no-repeat center;
+              background-size: cover;
+              -o-background-size: cover;
+              -moz-background-size: cover;
+              -webkit-background-size: cover;
+              display: flex;">
+  <div class="container hero-simple-container">
+    <div class="left-side-lp">
+      <img src="{{ module.box.logo.src }}">
+      <h1>{{ module.box.title }}</h1>
+      <h2>{{ module.box.subtitle }}</h2>  
+      {% set list = request_contact.list_memberships|pprint %} 
+      <a class="simple-radius-button" {% if 219 in list %} href="#webinars" {% else %} onclick="openModal()" {% endif %}>{{ module.box.button_text }}</a>
+    </div>
+  </div>
+  <a class="scroll-down" href="#webinars"><img src="https://f.hubspotusercontent10.net/hubfs/9130015/Arrow.png"></a>
+</div>
+
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top"><img src="https://f.hubspotusercontent10.net/hubfs/9130015/Vector.png"></button>
+
+<div id="webinarModal2" class="webinar-modal">
+  <div class="modal-content-v2">
+    <span class="close">&times;</span>
+    <h2>{{ module.modal_title }}</h2>
+    
+    <!--[if lte IE 8]>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+      region: "na1",
+      portalId: "9130015",
+      formId: "cdc223e4-0fb9-4151-8dd9-406b1ceed0e6",
+      onFormSubmit: function($form){
+        $(".simple-radius-button").attr("href", "#webinars");
+        /*document.getElementById("webinarModal").style.display = "none";
+        document.getElementsByClassName("img-fixed")[0].style.display = "none";
+        document.getElementsByClassName("video-list")[0].style.display = "block";*/
+      }
+    });
+    </script>
+    
+  </div>
+</div>
+
+
+<script>
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
+  var webinarModal2 = document.getElementById("webinarModal2");
+  function openModal(){
+  webinarModal2.style.display = "block";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == webinarModal2) {
+      webinarModal2.style.display = "none";
+    }
+  }
+</script>
+
+

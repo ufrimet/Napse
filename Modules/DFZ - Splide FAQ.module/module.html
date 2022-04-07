@@ -1,0 +1,82 @@
+
+
+
+{# 2107 - Uriel Frimet #}
+
+
+{# MOBILE #}
+<div class="testimonials-mobile" style="background-color: {{ module.style.background_color.color }};">
+  <div class="container">
+    {% for item in module.items %}
+      <div class="info-mobile">
+        <h1>{{ item.title }}</h1>
+        <p>{{ item.description }}</p>  
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{# DESKTOP #}
+<div class="testimonials" style="background-color: {{ module.style.background_color.color }};">
+  <div class="container">
+    {# CAMBIAR SIEMPRE EL ID Y LA CLASE PARA QUE NO ENTRE EN CONFLICTO CON OTROS SLIDERS #}
+    <div id="{{ module.id_slider }}" class="splide splide-testimonial"> 
+      <div class="splide__track">
+        <ul class="splide__list">
+          {% for item in module.items %}
+          <li class="splide__slide">
+            <div class="info-side">
+              <div class="border-bottom"> <h1>{{ item.title }}</h1> </div>
+            </div>
+            <div class="right-side">
+              <p>{{ item.description }}</p>  
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{{ require_css(get_asset_url('/Napse/CSS/splide.min.css'), { async: true }) }}
+{{ require_js(get_asset_url('/Napse/JS/splide.min.js'), { position: 'footer', defer: true }) }}
+<script>
+  document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#{{ module.id_slider }}',{
+      type: 'loop',
+      lazyLoad: 'sequential',
+      arrows: false,
+      pagination: true,
+      perPage: {{ module.slider_functions.breakpoints.desktop_slides_per_page }},
+      direction: 'ttb',
+      height: '100vh',
+    }).mount();
+  } );
+</script>
+
+
+<style>
+  
+  .splide-testimonial .splide__slide .info-side h1,
+  .splide-testimonial .splide__slide .info-side p,
+  .splide-testimonial .splide__slide .info-side a{
+    color: {{ module.style.text_color.color }};
+  }
+
+  .splide-testimonial .splide__pagination__page{
+    width: {{ module.style.dots.width }}px;
+    height: {{ module.style.dots.height }}px;
+    background: {{ module.style.dots.color.color }};
+    border-radius: {{ module.style.dots.border_radius }}%;
+    margin: {{ module.style.dots.margin }}px;
+    border: {{ module.style.dots.border_width }}px solid {{ module.style.dots.border_color.color }};
+  }
+  
+  .splide-testimonial .splide__pagination__page.is-active {
+    transform: scale({{ module.style.dots.active.scale }});
+    background: {{ module.style.dots.active.color.color }};
+    border: {{ module.style.dots.border_width }}px solid {{ module.style.dots.active.color.color }};
+  }
+  
+
+</style>

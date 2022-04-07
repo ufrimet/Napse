@@ -1,0 +1,419 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Napse/CSS/Carousel.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/Napse/CSS/Style.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/Napse/CSS/DFZ - 2103 - Carousel New.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "<link rel=\"preload\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\">\n<noscript><link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css\"></noscript>\n<script type=\"text/javascript\" src=\"//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js\"></script>\n<style>\n  .hs_recaptcha{\n    width: 50% !important;\n  }\n  .actions{\n    display: flex;\n    justify-content: flex-end;\n  }\n  .hs-button{\n    width: 100px;\n    margin-left: 0;\n    height: 40px;\n  }\n  textarea,\n  select,\n  input[type=email],\n  input[type=text],\n  input[type=tel]{\n    width: 100% !important;\n  }\n  @media(max-width:768px){\n    .hs_recaptcha, .hs-submit{\n      width: 100%;\n    }\n    .actions{\n      justify-content: center;\n    }\n  }\n</style>\n",
+  "customFooter" : "<script>\n  \n  $(document).ready(function(){\n    let width = $(window).width()\n\n    $('a').click(function(){\n      topFunction()\n    })\n\n    if(width <= 768){\n      $('.folders-container').slick({\n        autoplay: false,\n        dots: false,\n        slidesToShow: 1,\n        slidesToScroll: 1,\n        arrows: true,\n        prevArrow: '<button type=\"button\" class=\"slick-prev\"><img src=\"https://f.hubspotusercontent40.net/hubfs/5292292/Digifianz/2020/Assets/Miscellaneous/chevron-dark.png\"></button>',\n        nextArrow: '<button type=\"button\" class=\"slick-next\"><img src=\"https://f.hubspotusercontent40.net/hubfs/5292292/Digifianz/2020/Assets/Miscellaneous/chevron-dark.png\"></button>',\n      }) \n    }\n    \n    window.addEventListener('message', async(event) => {\n      if(event.data.eventName === 'onFormReady') {\n        $('.legal-consent-container input').trigger('click')\n      }\n    })\n    \n  })\n  \n</script>",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1622127110555280",
+        "label" : "NPS - Menu",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "wrapping_html" : "",
+          "per_widget_wrapper_html" : "",
+          "overrideable" : true,
+          "widget_name" : "NPS - Menu Items Ficticios v2",
+          "schema_version" : 2,
+          "path" : "/Napse/Modules/NPS - Menu Items Ficticios v2"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_161719242396361",
+        "label" : "DFZ - 2103 - Add script Google",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "display: none;",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/DFZ - 2103 - Add script Google",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "DFZ - 2103 - Add script Google",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "display: none;",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_16171097111872994",
+        "label" : "NPS - Hero Form",
+        "type" : "custom_widget",
+        "params" : {
+          "background_image" : {
+            "alt" : "5794d9eccf459f12a11dba1ec6bd1346",
+            "height" : 1333,
+            "loading" : "lazy",
+            "max_height" : 1333,
+            "max_width" : 2000,
+            "size_type" : "auto",
+            "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/5794d9eccf459f12a11dba1ec6bd1346.jfif",
+            "width" : 2000
+          },
+          "box" : {
+            "logo" : {
+              "alt" : "Logo-Napse 1",
+              "height" : 82,
+              "loading" : "lazy",
+              "max_height" : 82,
+              "max_width" : 163,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Logo-Napse%201.png",
+              "width" : 163
+            },
+            "subtitle" : "Lorem Ipsum is simply dummy<br>text of the printing.",
+            "title" : "Lorem Ipsum<br>is not simply"
+          },
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Hero Form",
+          "per_widget_wrapper_html" : "",
+          "right_side" : {
+            "form" : {
+              "form_id" : "7c75fb6b-0684-4d9a-82bd-30318e6e25b2",
+              "form_type" : "HUBSPOT",
+              "message" : "Gracias por enviar el formulario.",
+              "response_type" : "inline"
+            },
+            "title_form" : "Lorem Ipsum"
+          },
+          "schema_version" : 2,
+          "widget_name" : "NPS - Hero Form",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_16170784465792564",
+        "label" : "NPS - Info Numbers",
+        "type" : "custom_widget",
+        "params" : {
+          "background_image" : {
+            "alt" : "back-lineas",
+            "height" : 1080,
+            "loading" : "lazy",
+            "max_height" : 1080,
+            "max_width" : 1920,
+            "size_type" : "auto",
+            "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/back-lineas.jpg",
+            "width" : 1920
+          },
+          "box" : {
+            "title" : "Sobre Napse"
+          },
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "icons" : [ {
+            "number" : "+600",
+            "text" : "It <strong>is a long established</strong> that a reader will be distracted by the readable."
+          }, {
+            "number" : "1200",
+            "text" : "It is a long established that a reader will be distracted by the <strong>readable</strong>."
+          }, {
+            "number" : "70%",
+            "text" : "It is a long established that a <strong>reader will</strong> be distracted by the readable."
+          } ],
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Info Numbers",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Info Numbers",
+          "wrapping_html" : "<div id=\"sobre-nosotros\">\n  {{ html }}\n</div>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_16170794271762664",
+        "label" : "NPS - Info Icons",
+        "type" : "custom_widget",
+        "params" : {
+          "background_image" : {
+            "alt" : "7a74eeee0014687b2db81cbf0378596a",
+            "height" : 1080,
+            "loading" : "lazy",
+            "max_height" : 1080,
+            "max_width" : 1920,
+            "size_type" : "auto",
+            "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/7a74eeee0014687b2db81cbf0378596a.png",
+            "width" : 1920
+          },
+          "box" : {
+            "title" : "Soluciones"
+          },
+          "button" : {
+            "text_button" : "Botón"
+          },
+          "css_class" : "custom-soluciones",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "icons" : [ {
+            "icon" : {
+              "alt" : "Group-3",
+              "height" : 139,
+              "loading" : "lazy",
+              "max_height" : 139,
+              "max_width" : 139,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Group-3.png",
+              "width" : 139
+            },
+            "text" : "It is a long established that a reader will be distracted by the <strong>readable</strong>.",
+            "title_icon" : "RETAIL ONLINE"
+          }, {
+            "icon" : {
+              "alt" : "Group-4",
+              "height" : 139,
+              "loading" : "lazy",
+              "max_height" : 139,
+              "max_width" : 140,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Group-4.png",
+              "width" : 140
+            },
+            "text" : "It is a <strong>long established</strong> that a reader will be distracted by the readable.",
+            "title_icon" : "Retail Físico"
+          }, {
+            "icon" : {
+              "alt" : "Group-2",
+              "height" : 139,
+              "loading" : "lazy",
+              "max_height" : 139,
+              "max_width" : 140,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Group-2.png",
+              "width" : 140
+            },
+            "text" : "It is a long established that a <strong>reader will</strong> be distracted by the readable.",
+            "title_icon" : "MEDIOS DE PAGO"
+          }, {
+            "icon" : {
+              "alt" : "Group-Mar-30-2021-04-52-50-00-AM",
+              "height" : 141,
+              "loading" : "lazy",
+              "max_height" : 141,
+              "max_width" : 141,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Group-Mar-30-2021-04-52-50-00-AM.png",
+              "width" : 141
+            },
+            "text" : "It is a long established that a <strong>reader will</strong> be distracted by the readable.",
+            "title_icon" : "Omnicanalidad"
+          } ],
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Info Icons",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Info Icons",
+          "wrapping_html" : "<div id=\"soluciones\">\n  {{ html }}\n</div>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "custom-soluciones",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1617120576207226",
+        "label" : "NPS - 2103 - Productos",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - 2103 - Productos",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - 2103 - Productos",
+          "wrapping_html" : "<div id=\"productos\">\n  {{ html }}\n</div>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_16170817383302919",
+        "label" : "NPS - Slider Nuestros Clientes Global",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Slider Nuestros Clientes Global With Button",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Slider Nuestros Clientes Global With Button",
+          "wrapping_html" : "<div id=\"clientes\">\n  {{ html }}\n</div>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_16170822299342951",
+        "label" : "NPS - Footer Only Logo",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Footer Only Logo",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Footer Only Logo",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

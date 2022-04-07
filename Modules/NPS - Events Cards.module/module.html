@@ -1,0 +1,59 @@
+<style>
+
+  .bkg-events{
+    background:url({{ module.background_image.src }});
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media only screen and (max-width: 768px) {
+
+    .bkg-events{
+      background: none;
+    }
+  }
+</style>
+
+
+<div class="bkg-events">
+  <div class="container al-ju-center events">
+    <h3>{{ module.title }}</h3>
+    <img class="separador-v2" src="https://f.hubspotusercontent10.net/hubfs/9130015/Vector%209.png">
+    <div class="cards-events">
+      <div class="card-event">
+        <img src="{{ module.date_card.icon.src }}">
+        <h4>FECHA Y HORA</h4>
+        <h2>{{ module.date_card.date_text }}</h2>
+      </div>
+      
+      <div class="card-event">
+        <img src="{{ module.oradores_card.icon.src }}">
+        <h4>{{ module.oradores_card.title }}</h4>
+        {% for orador in module.oradores_card.orador %}
+          <span>{{ orador.name_orador }}</span>
+          <p>{{ orador.company_name }}</p>
+          <p>{{ orador.position }}</p>
+          <hr class="simple-hr">
+        {% endfor %}
+      </div>
+      
+      <div class="card-event">
+        <img src="{{ module.moderadores_card.icon.src }}">
+        <h4>{{ module.moderadores_card.title }}</h4>
+        {% for moderador in module.moderadores_card.moderador %}
+          <span>{{ moderador.name_moderador }}</span>
+          <p>{{ moderador.company_name }}</p>
+          <p>{{ moderador.position }}</p>
+          <hr class="simple-hr">
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+ 

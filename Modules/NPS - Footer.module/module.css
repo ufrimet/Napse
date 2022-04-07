@@ -1,0 +1,5 @@
+.informacion-contacto,
+.mapa-sitio{
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,304 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Napse/CSS/Style.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_16159285773668",
+        "label" : "NPS - Hero LP",
+        "type" : "custom_widget",
+        "params" : {
+          "background_image" : {
+            "alt" : "Union2",
+            "height" : 1052,
+            "loading" : "lazy",
+            "max_height" : 1052,
+            "max_width" : 1920,
+            "size_type" : "auto",
+            "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Union2.png",
+            "width" : 1920
+          },
+          "box" : {
+            "button" : {
+              "link_button" : {
+                "no_follow" : false,
+                "open_in_new_tab" : false,
+                "url" : {
+                  "href" : "#Form",
+                  "type" : "EXTERNAL"
+                }
+              },
+              "text_button" : "Descargar"
+            },
+            "logo" : {
+              "alt" : "logo",
+              "height" : 662,
+              "loading" : "lazy",
+              "max_height" : 662,
+              "max_width" : 1336,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/logo.png",
+              "width" : 1336
+            },
+            "subtitle" : "Lorem Ipsum is simply dummy text of the printing.",
+            "title" : "Lorem Ipsum is not simply"
+          },
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Hero LP",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Hero LP",
+          "wrapping_html" : "<div id=\"first-section\"> \n  {{html}}\n</div>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1615989439062205",
+        "label" : "NPS - Info Icons",
+        "type" : "custom_widget",
+        "params" : {
+          "background_image" : {
+            "alt" : "back-lineas",
+            "height" : 1080,
+            "loading" : "lazy",
+            "max_height" : 1080,
+            "max_width" : 1920,
+            "size_type" : "auto",
+            "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/back-lineas.jpg",
+            "width" : 1920
+          },
+          "box" : {
+            "subtitle" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of.",
+            "title" : "The point"
+          },
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "z-index: -1; position: relative;",
+          "icons" : [ {
+            "icon" : {
+              "alt" : "a1a4d446b1ff522126597a147974368f",
+              "height" : 288,
+              "loading" : "lazy",
+              "max_height" : 288,
+              "max_width" : 294,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/a1a4d446b1ff522126597a147974368f.png",
+              "width" : 294
+            },
+            "text" : "It <strong>is a long established </strong>that a reader will be distracted by the readable."
+          }, {
+            "icon" : {
+              "alt" : "2ab7b746aace307d0ba8922e6b32fcb7",
+              "height" : 288,
+              "loading" : "lazy",
+              "max_height" : 288,
+              "max_width" : 295,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/2ab7b746aace307d0ba8922e6b32fcb7.png",
+              "width" : 295
+            },
+            "text" : "It is a long established that a reader will be distracted by the <strong>readable.</strong>"
+          }, {
+            "icon" : {
+              "alt" : "9597141a3f47107f34445e44f5f417cc",
+              "height" : 288,
+              "loading" : "lazy",
+              "max_height" : 288,
+              "max_width" : 294,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/9597141a3f47107f34445e44f5f417cc.png",
+              "width" : 294
+            },
+            "text" : "It is a long established  that a <strong>reader will</strong> be distracted by the readable."
+          } ],
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Info Icons",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Info Icons",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "z-index: -1; position: relative;",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1616093648779327",
+        "label" : "Grupo de módulos",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "#Form",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_162203097848918",
+            "label" : "NPS - Suscribite Original LP Inicial",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : true,
+              "widget_name" : "NPS - Suscribite Original LP Inicial",
+              "schema_version" : 2,
+              "path" : "/Napse/Modules/NPS - Suscribite Original LP Inicial",
+              "background_image" : {
+                "size_type" : "auto",
+                "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Union%20(1).svg",
+                "alt" : "Union (1)",
+                "loading" : "lazy",
+                "width" : 78,
+                "height" : 60,
+                "max_width" : 78,
+                "max_height" : 60
+              },
+              "box" : {
+                "form" : {
+                  "form_id" : "701e20c3-b237-412d-8c81-7b062255df5e",
+                  "response_type" : "inline",
+                  "message" : "Gracias por enviar el formulario."
+                }
+              }
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "#Form",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1616002268206425",
+        "label" : "NPS - Footer Only Logo",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "margin-top: -28px; z-index: -1;     position: relative;",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Footer Only Logo",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Footer Only Logo",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "margin-top: -28px; z-index: -1;     position: relative;",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

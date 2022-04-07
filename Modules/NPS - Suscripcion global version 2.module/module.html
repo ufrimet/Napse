@@ -1,0 +1,66 @@
+<div class="container-form">
+  <div class="back-to-top-form">
+    <a href="#top"><img src="https://f.hubspotusercontent10.net/hubfs/9130015/Vector%20(2).png"></a>
+    <a href="#top">volver arriba</a>
+  </div>
+  
+  <div class="suscription-box suscription-box2 container">
+
+    <div class="title-suscription">
+      <img src="https://f.hubspotusercontent10.net/hubfs/9130015/Vector-4.png">
+      <span>{{ module.title }}</span>
+    </div>
+
+    <div class="suscription">
+      {% form
+          form_to_use="{{ module.form.form_id }}"
+          response_response_type="{{ module.form.response_type }}"
+          response_message="{{ module.form.message }}"
+          response_redirect_id="{{ module.form.redirect_id }}"
+          response_redirect_url="{{module.form.redirect_url}}"
+          gotowebinar_webinar_key="{{ module.form.gotowebinar_webinar_key }}"
+        %}
+
+      <div class="tyc">
+        <span>Estos datos se utilizarán de acuerdo con nuestro <a href="{{ module.politicas_de_privacidad.url.href }}">aviso de privacidad.</a></span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<style>
+  .back-to-top-form{
+    width: 218px;
+    height: 90px;
+    background-image: url(https://f.hubspotusercontent10.net/hubfs/9130015/Vector%20%281%29.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    text-transform: lowercase;
+    background-position: center;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -15px;
+    margin-top: 10px;
+  }
+  
+  .back-to-top-form a:first-child img{
+    width: 15px;
+    height: 15px;
+  }
+  
+  .back-to-top-form a:last-child{
+    margin-top: 15px;
+  }
+  
+  .back-to-top-form a:first-child img:hover{
+    /*margin-top: 8px;*/
+  }
+</style>

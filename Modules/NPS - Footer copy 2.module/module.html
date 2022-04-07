@@ -1,0 +1,48 @@
+<div style="background-color: #F2F2F2;">
+  <div class="container footer">
+
+    <div>
+      <img src="{{ module.logo.src }}" class="logo">
+    </div>
+
+
+    <div class="mapa-sitio">
+      <ul>
+        <li>MAPA DEL SITIO</li>
+        {% for item in module.menu_footer %}
+        <li><a href="{{ item.link_item.url.href }}">{{ item.text_item }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+
+
+    <div class="informacion-contacto">
+      <ul>
+        <li>OFICINAS</li>
+        <li>{{ module.ubicacion.provincia }}</li>
+        <li>{{ module.ubicacion.direccion }}</li>
+        <li>{{ module.ubicacion.cercania }}</li>
+        <li>{{ module.ubicacion.localidad }}</li>
+      </ul>
+    </div>
+
+
+    <div class="contacto-footer">
+      <ul>
+        <li>CONTACTO</li>
+          <ul class="icons-ul">
+            {% for icon in module.icons %}
+            <li><a href="{{ icon.icon_link.url.href }}"><i class="{{icon.icon}}"></i></a></li>
+            {% endfor %}
+          </ul>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="bottom-form">
+    <div class="container">
+      <span>©{{year}} NAPSE - TODOS LOS DERECHOS RESERVADOS</span>  
+    </div>
+  </div>
+  
+</div>

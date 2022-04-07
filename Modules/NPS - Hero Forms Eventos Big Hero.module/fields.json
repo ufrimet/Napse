@@ -1,0 +1,168 @@
+[ {
+  "id" : "8e6b552c-95a9-fd8c-0457-c44907591398",
+  "name" : "background_image",
+  "label" : "Background image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "820f34cb-3531-f35d-f6d7-21e498daee91",
+  "name" : "logo_napse",
+  "label" : "Logo Napse",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "119e1a79-c5f2-b956-91c5-b240ce472d77",
+  "name" : "box",
+  "label" : "Box",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c9ec96cf-d2a6-5cc7-625e-aeb4c7273205",
+    "name" : "logo",
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/NapseTalks.png",
+      "alt" : "NapseTalks",
+      "loading" : "lazy",
+      "width" : 1835,
+      "height" : 1653,
+      "max_width" : 1835,
+      "max_height" : 1653
+    }
+  }, {
+    "id" : "d4802682-82d8-0f84-6e0f-7276cc5ae624",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "e4e5859d-b759-e136-ba87-6e6aad09075e",
+    "name" : "subtitle",
+    "label" : "Subtitle",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/NapseTalks.png",
+      "alt" : "NapseTalks",
+      "loading" : "lazy",
+      "width" : 1835,
+      "height" : 1653,
+      "max_width" : 1835,
+      "max_height" : 1653
+    }
+  }
+}, {
+  "id" : "c9dc0870-ab8b-c790-dfa1-cdcba2967ac3",
+  "name" : "right_side",
+  "label" : "Right side",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "6eb9aaea-daad-548c-b5cd-80cb92e818ac",
+    "name" : "title_form",
+    "label" : "Title form",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "012eb795-379c-cd08-3dd3-9a8e60e73b35",
+    "name" : "separador",
+    "label" : "Separador",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Vector%209.png",
+      "alt" : "Vector 9",
+      "loading" : "lazy",
+      "width" : 36,
+      "height" : 11,
+      "max_width" : 36,
+      "max_height" : 11
+    }
+  }, {
+    "id" : "388a313c-e359-d529-ae90-744dd3c332e1",
+    "name" : "form",
+    "label" : "Form",
+    "required" : false,
+    "locked" : false,
+    "type" : "form",
+    "default" : {
+      "form_id" : "7c75fb6b-0684-4d9a-82bd-30318e6e25b2",
+      "response_type" : "inline",
+      "message" : "Gracias por enviar el formulario.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "separador" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Vector%209.png",
+      "alt" : "Vector 9",
+      "loading" : "lazy",
+      "width" : 36,
+      "height" : 11,
+      "max_width" : 36,
+      "max_height" : 11
+    },
+    "form" : {
+      "form_id" : "7c75fb6b-0684-4d9a-82bd-30318e6e25b2",
+      "response_type" : "inline",
+      "message" : "Gracias por enviar el formulario.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  }
+} ]

@@ -1,0 +1,94 @@
+.suscription-box{
+  display: flex;
+  align-items: center;
+  flex-direction: row !important;
+}
+
+.title-suscription{
+  display: flex;
+  align-items: center;
+}
+
+.title-suscription img{
+  margin-right: 15px;
+}
+
+.title-suscription span{
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.suscription-box .suscription .hs-form{
+  display: flex;
+}
+
+.suscription input{
+  width: 100%;
+}
+
+.suscription input[type=submit]{
+  width: 114px;
+  height: 36px;
+  background: #63C3D1;
+  margin-left: 20px;
+}    
+
+.suscription form{
+  margin-left: 25px;
+  max-width: 100%;
+  flex-wrap: nowrap;
+}
+
+.suscription form .hs-submit{
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.suscription form .input{
+  margin-right: 8px !important;
+}
+
+.hs-error-msgs{
+  position: absolute;
+}
+
+.tyc{
+  color: white;
+  position: absolute;
+  margin: 15px 0 0 25px;
+}
+
+.tyc a{
+  color: #63C3D1;
+}
+
+.submitted-message{
+  margin: 10px 0 0 25px;
+}
+
+.submitted-message p{
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  
+ .suscription-box{
+    flex-direction: column !important;
+    padding: 20px !important;
+  }
+  
+  .suscription form{
+    flex-direction: column;
+  }
+  
+  .suscription input[type=submit] {
+    margin-left: 0px; 
+  }
+  
+  .tyc{
+    position: relative;
+  }
+  
+}

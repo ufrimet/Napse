@@ -1,0 +1,120 @@
+
+  
+  <h2 class="related-post-title">Articulos relacionados</h2>
+  
+  {# {% related_blog_posts blog_ids= {{ module.blog_field }}, limit=2, tags="gestión-y-experiencia" %} #}
+  {% set rel_posts = blog_recent_tag_posts('default', content.topic_list[0].slug , 2 ) %}
+  {% for post in rel_posts %}
+    {% unless content.absolute_url == post.absolute_url %}
+      <div class="casos-box box-card related-post-box">      
+        <div class="casos-image box-card-image">
+          <img src="{{post.post_list_summary_featured_image}}">
+        </div>
+        <div class="casos-text box-card-text">
+          <p>{{ post.name }}</p>
+        </div>
+        <div class="box-card-button">
+          <a>&#8594;</a>
+          <a href="{{ post.absolute_url }}">LEER MÁS</a>
+        </div>
+      </div>
+    {% endunless %}
+  {% endfor %}
+
+
+
+
+
+<div class='dfz-casos container div-display'>
+  <div class="carousel-casos" id="{{module.carousel.carousel_id}}">
+    {% for post in rel_posts %}
+    <div class="carousel-casos-item">
+
+      <div class="casos-box box-card tag-box">      
+        <div class="casos-image box-card-image">
+          <img src="{{post.post_list_summary_featured_image}}">
+        </div>
+        <div class="casos-text box-card-text">
+          <p>{{ post.name }}</p>
+        </div>
+        <div class="box-card-button">
+          <a>&#8594;</a>
+          <a href="{{ post.absolute_url }}">LEER MÁS</a>
+        </div>
+      </div>
+
+    </div>
+
+    {% endfor %}
+  </div>
+</div>
+
+{{ require_js("//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js") }}
+
+<script>
+  
+$(document).ready( () => {
+
+  $('#{{ module.carousel.carousel_id }}').slick({
+    infinite: true,
+    autoplay: {{module.carousel.on_off}},
+    autoplaySpeed: {{module.carousel.speed}},
+    dots: false,
+    customPaging : function(slider, i) {
+      var thumb = $(slider.$slides[i]).data();
+      return '<div class="dot"></div>';
+    },
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev"><img src="https://f.hubspotusercontent40.net/hubfs/5292292/Digifianz/2020/Assets/Miscellaneous/chevron-dark.png"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="https://f.hubspotusercontent40.net/hubfs/5292292/Digifianz/2020/Assets/Miscellaneous/chevron-dark.png"></button>',
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }                       
+    ]
+  });
+  
+})  
+  
+</script>
+
+<style>
+  
+#{{ module.carousel.carousel_id }} .slick-dots{
+  top: 0px;
+}
+
+#{{ module.carousel.carousel_id }} .slick-dots .dot{
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  margin: 0 10px;
+  background-color: #C4C4C4;
+  border: none;
+}
+
+#{{ module.carousel.carousel_id }} .slick-dots .slick-active .dot{
+  background: #3D3D3D;
+}
+ 
+</style>

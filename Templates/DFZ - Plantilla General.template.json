@@ -1,0 +1,213 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Napse/CSS/Style.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1622834517332134",
+        "label" : "Header",
+        "type" : "widget_container",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1622834520388136",
+        "label" : "Contenido",
+        "type" : "widget_container",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ {
+          "x" : 0,
+          "w" : 12,
+          "name" : "module_1624991721661354",
+          "label" : "DFZ - Agenda",
+          "type" : "custom_widget",
+          "params" : {
+            "css_class" : "",
+            "css_id" : "",
+            "css_id_str" : "",
+            "css_style" : "",
+            "wrapping_html" : "",
+            "per_widget_wrapper_html" : "",
+            "overrideable" : true,
+            "widget_name" : "DFZ - Agenda",
+            "schema_version" : 2,
+            "path" : "/Napse/Modules/DFZ - Agenda",
+            "title" : "Agenda",
+            "fechas" : [ {
+              "link_webinar" : {
+                "url" : {
+                  "type" : "EXTERNAL",
+                  "href" : "https://www.google.com/"
+                },
+                "open_in_new_tab" : false,
+                "no_follow" : false
+              },
+              "number" : 5,
+              "mes" : "Mayo",
+              "nombre_webinar" : "Mas allá de la omnicanalidad"
+            }, {
+              "link_webinar" : {
+                "url" : {
+                  "type" : "EXTERNAL",
+                  "href" : "https://www.google.com/"
+                },
+                "open_in_new_tab" : false,
+                "no_follow" : false
+              },
+              "number" : 9,
+              "mes" : "Junio",
+              "nombre_webinar" : "¿Cómo integrar medios de pago?"
+            }, {
+              "link_webinar" : {
+                "url" : {
+                  "type" : "EXTERNAL",
+                  "href" : "https://www.google.com/"
+                },
+                "open_in_new_tab" : false,
+                "no_follow" : false
+              },
+              "number" : 7,
+              "mes" : "Julio",
+              "nombre_webinar" : "¿Cómo manejar tus pedidos de manera integrada?"
+            } ],
+            "background_image" : {
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/7a74eeee0014687b2db81cbf0378596a%20(1).png",
+              "alt" : "7a74eeee0014687b2db81cbf0378596a (1)",
+              "loading" : "lazy",
+              "width" : 1920,
+              "height" : 1080,
+              "max_width" : 1920,
+              "max_height" : 1080
+            }
+          },
+          "rows" : [ ],
+          "rowMetaData" : [ ],
+          "cells" : [ ],
+          "cssId" : "",
+          "cssClass" : "",
+          "cssStyle" : "",
+          "styles" : null,
+          "widgets" : [ ]
+        } ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1622834523484138",
+        "label" : "Footer",
+        "type" : "widget_container",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

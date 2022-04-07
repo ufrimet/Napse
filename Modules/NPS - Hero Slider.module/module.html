@@ -1,0 +1,204 @@
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script>
+  
+$(document).ready(function(){
+
+  $('.post-listing-box').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+        customPaging : function(slider, i) {
+      var thumb = $(slider.$slides[i]).data();
+      return '<div class="dot"></div>';
+    },
+    speed: 1000,
+    pauseOnHover: false,
+    arrows: false,
+    prevArrow: '<button type="button" class="slick-prev"><img src="https://f.hubspotusercontent40.net/hubfs/5292292/Digifianz/2020/Assets/Miscellaneous/chevron-dark.png"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="https://f.hubspotusercontent40.net/hubfs/5292292/Digifianz/2020/Assets/Miscellaneous/chevron-dark.png"></button>',
+  });
+
+});
+
+</script>
+
+<style>
+  
+  .thumbnail{
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .thumbnail-mask{
+    width: 100%;
+    height: 570px;
+    background-color: rgba(50,50,50,.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .thumbnail-mask .main-button{
+    margin-top: 50px;
+  }
+  
+  .thumbnail-mask h1{
+    font-size: 60px;
+  }
+  
+  .thumbnail-mask h2{
+    margin-top: 25px;
+  }
+  
+  .post-listing-box .post-item-slider{
+    margin: 0 !important;
+  }
+  
+  .post-item-slider h4{
+    color: white;
+    font-size: 36px;
+    width: 600px;
+    text-align: center;
+  }
+  
+  .link-more{
+    background: #342A86;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .link-more:hover{
+    background: #65669F;
+  }
+  
+  .slick-dots {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding-left: 0;
+    justify-content: center;
+    position: relative;
+    top: -30px;
+  }
+  
+  .dot{
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    border-radius: 50px;
+    margin: 0 10px;
+  }
+
+  .slick-active .dot{
+    background: white;
+  }
+  
+  .post-listing-container .post-listing-box .slick-arrow {
+    position: absolute;
+    top: calc(50% - 15px);
+    font-size: 40px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    outline: none!important;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .post-listing-container .post-listing-box .slick-arrow img {
+    height: 40px;
+  }
+
+  .post-listing-container .post-listing-box .slick-next img {
+    transform: rotate(-180deg);
+  }
+
+  .post-listing-container .post-listing-box .slick-prev {
+    left: 125px;
+    z-index: 999;
+  }
+
+  .post-listing-container .post-listing-box .slick-next {
+    right: 125px;
+  }
+
+  @media only screen and (max-width: 767px) {
+
+    .post-listing-container .post-listing-box .slick-list{
+      height: auto; 
+    }
+
+    .post-listing-container .post-listing-box .item .text-carousel{
+      margin-top: 20px;
+    }
+    
+    .post-listing-container .post-listing-box .slick-prev {
+      left: 0px;
+    }
+
+    .post-listing-container .post-listing-box .slick-next {
+      right: 0px;
+    }
+    
+    .thumbnail-mask {
+      max-width: 1080px;
+      margin: auto;
+      padding: 0 20px;
+    }
+    
+    .thumbnail-mask h1{
+      font-size: 30px;
+    }
+    
+    .thumbnail-mask h2{
+      font-size: 16px;
+    }
+
+  }
+  
+  @media(max-width: 620px){
+    .post-item-slider h4{
+      font-size: 28px;
+      width: 350px;
+    }
+  }
+  
+    @media(max-width: 420px){
+    .post-item-slider h4{
+      font-size: 26px;
+      width: 300px;
+    }
+  }
+  
+</style>
+
+  <div class="post-listing-container">
+
+    <div class="post-listing-box">
+      {% set rel_bps = blog_recent_posts( module.blog_field, 3 ) %}
+      {% for post in rel_bps %}
+      <div class="post-item-slider">
+        <div class="thumbnail" style="background-image: url({{ post.post_list_summary_featured_image }})">
+          <div class="thumbnail-mask">
+            <h1>{{ post.name }}</h1>
+            {# <h2>{{ post.post_list_content|truncatehtml(110, '..' , true) }}</h2> #}
+            <a class="main-button" href="{{ post.absolute_url }}">VER MÁS</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

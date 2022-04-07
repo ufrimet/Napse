@@ -1,0 +1,131 @@
+[ {
+  "id" : "f4477218-b25d-bfd0-29b4-47c4c94f35ce",
+  "name" : "background_image",
+  "label" : "Background image",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "d0e2e8fe-9b56-bf9f-e67c-409c6d66b4d0",
+  "name" : "titulo_global",
+  "label" : "Titulo global",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "e7f5ba36-fd4b-498b-c6e2-9b10070da203",
+  "name" : "webinars",
+  "label" : "Webinars",
+  "required" : false,
+  "locked" : true,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "85a8001d-4b1c-3634-8f2f-077058aa5bac",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "d3c3af39-abce-f4d1-d501-5dd42dd148f8",
+    "name" : "thumbnail_image",
+    "label" : "Thumbnail image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "src" : ""
+    }
+  }, {
+    "id" : "3a56dbf6-973b-f47e-985b-feae63964e1a",
+    "name" : "video",
+    "label" : "Video",
+    "required" : false,
+    "locked" : false,
+    "resizable" : false,
+    "show_preview" : true,
+    "type" : "videoplayer"
+  }, {
+    "id" : "cf01bcd7-c705-5cb8-3635-1d5caad21fb3",
+    "name" : "text",
+    "label" : "Text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "2b0fbe27-ca2e-1254-eaff-3571d95a7d7e",
+    "name" : "button_text",
+    "label" : "Button text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "02e23683-1242-89c9-b208-a4e6571dae45",
+    "name" : "tags",
+    "label" : "Tags",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "47debf7f-4c7d-4eb7-b4d4-6edffeb92bc4",
+      "name" : "tag_image",
+      "label" : "Tag image",
+      "required" : false,
+      "locked" : false,
+      "display" : "select",
+      "choices" : [ [ "https://f.hubspotusercontent10.net/hubfs/9130015/Rectangle%20144.png", "Orange" ], [ "https://f.hubspotusercontent10.net/hubfs/9130015/Rectangle%20144%20(1).png", "Light blue" ], [ "https://f.hubspotusercontent10.net/hubfs/9130015/Rectangle%20144%20(2).png", "Violet" ], [ "https://f.hubspotusercontent10.net/hubfs/9130015/Rectangle%20144%20(3).png", "Yellow" ] ],
+      "type" : "choice"
+    }, {
+      "id" : "c9017c35-1916-d157-9404-0af054979721",
+      "name" : "tag_text",
+      "label" : "Tag text",
+      "required" : false,
+      "locked" : false,
+      "validation_regex" : "",
+      "allow_new_line" : false,
+      "show_emoji_picker" : false,
+      "type" : "text"
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : { }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "thumbnail_image" : {
+      "src" : ""
+    },
+    "tags" : { }
+  }
+} ]

@@ -1,0 +1,139 @@
+/* The Modal (background) */
+.webinar-modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); 
+  z-index: 999;
+}
+
+/* Modal Content/Box */
+.modal-content-v2 {
+  background-color: #411E5A;
+  margin: 5% auto; /* 5% from the top and centered */
+  padding: 20px;
+  border-radius: 50px;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content-v2 h2{
+  text-align: center;
+  margin: 20px 0;
+}
+
+#contactModal{
+  display: none;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form{
+  margin: auto;
+}
+
+.hs_recaptcha{
+  width: 50% !important;
+}
+
+.actions{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hs-button{
+  width: 100px;
+  margin-left: 0;
+  height: 40px;
+  background-color: red;
+}
+
+.hs-submit{
+  width: auto !important;
+  margin: auto;
+}
+
+textarea,
+select,
+input[type=email],
+input[type=text],
+input[type=tel],
+input[type=number]{
+  width: 100% !important;
+}
+.submitted-message{
+  color: white !important;
+  font-size: 20px;
+  padding: 0 20px;
+  text-align: center;
+  max-width: 450px;
+}
+.left-side-lp h2{
+  max-width: 450px;
+}
+
+.scroll-down{
+  display: none;
+}
+
+@media(max-width:767px){
+  .hs_recaptcha, .hs-submit{
+    width: 100%;
+  }
+  .actions{
+    justify-content: center;
+  }
+  
+  .modal-content-v2 {
+    width: 90%; 
+  }
+
+  .hero-class{
+    flex-direction: column;
+  }
+
+  .hero-class .container h1 {
+    font-size: 40px !important;
+    margin-top: 30px;
+  }
+  
+  .hero-class .container h2{
+    font-size: 18px;
+  }
+
+  .left-side-lp{
+    align-items: flex-start !important;
+  }
+  
+  .simple-radius-button{
+    display: none;
+  }
+
+  .scroll-down{
+    display: block;
+    margin: auto;
+  }
+}
+
+@media(max-width:600px){
+  .hero-class .container .img-video-div img{
+    width: 100%;
+  }
+}

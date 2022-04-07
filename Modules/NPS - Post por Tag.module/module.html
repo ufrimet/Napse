@@ -1,0 +1,112 @@
+<div style="background:url({{ module.background_image.src }});
+              background-size: cover;
+              -o-background-size: cover;
+              -moz-background-size: cover;
+              -webkit-background-size: cover;
+              background-repeat: no-repeat;
+              min-height: 700px;">
+
+  <div class="container title-tag-post">
+    <h3 style="color: {{ module.separador_color.color }};">{{ module.title }}</h3>
+    <img class="separador" src="{{ module.separador.src }}">
+  </div>
+
+  {% set tag_posts = blog_recent_tag_posts( module.blog_field, module.tag_posts ) %}
+  <div class='dfz-casos container div-blog'>
+    <div class="carousel-casos" id="{{module.carousel.carousel_id}}">
+      {% for post in tag_posts %}
+      <div class="carousel-casos-item">
+
+        <div class="casos-box box-card tag-box">      
+          <div class="casos-image box-card-image">
+            <img src="{{post.post_list_summary_featured_image}}">
+            <hr class="bkg-separador-color" style="background: {{ module.separador_color.color }}">
+            <div class="bkg-separador-color" style="background: {{ module.separador_color.color }}">{{ post.publish_date|datetimeformat('%b %e, %Y') }}</div>
+          </div>
+          <div class="casos-text box-card-text">
+            <p> {{ post.name }}</p>
+            <p> {{ post.post_list_content|striptags|truncate(100, breakword=False, end='...') }} </p>
+          </div>
+          <div class="box-card-button">
+            <a>&#8594;</a>
+            <a href="{{ post.absolute_url }}">LEER MÁS</a>
+          </div>
+        </div>
+
+      </div>
+
+      {% endfor %}
+    </div>
+  </div>
+  
+</div>
+
+{{ require_js("//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js") }}
+
+<script>
+  
+$(document).ready( () => {
+
+  $('#{{ module.carousel.carousel_id }}').slick({
+    infinite: true,
+    autoplay: {{module.carousel.on_off}},
+    autoplaySpeed: {{module.carousel.speed}},
+    dots: true,
+    customPaging : function(slider, i) {
+      var thumb = $(slider.$slides[i]).data();
+      return '<div class="dot"></div>';
+    },
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows: true,
+    prevArrow: '<button type="button" class="slick-prev"><img src="https://f.hubspotusercontent40.net/hubfs/5292292/Digifianz/2020/Assets/Miscellaneous/chevron-dark.png"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="https://f.hubspotusercontent40.net/hubfs/5292292/Digifianz/2020/Assets/Miscellaneous/chevron-dark.png"></button>',
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }                       
+    ]
+  });
+  
+})  
+  
+</script>
+
+<style>
+  
+#{{ module.carousel.carousel_id }} .slick-dots{
+  top: 0px;
+}
+
+#{{ module.carousel.carousel_id }} .slick-dots .dot{
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+  margin: 0 10px;
+  background-color: #C4C4C4;
+  border: none;
+}
+
+#{{ module.carousel.carousel_id }} .slick-dots .slick-active .dot{
+  background: #3D3D3D;
+}
+ 
+</style>

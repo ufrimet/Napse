@@ -1,0 +1,31 @@
+
+
+
+
+{# 2107 - Uriel Frimet #}
+
+<section class="hero-big-center-image" >
+    <div class="container">
+        <div class="logos">
+            {% for logo in module.logos %}
+                <img src="{{ logo.logo.src }}">
+            {% endfor %}
+        </div>
+        <h1>{{ module.title }}</h1>
+        <img src="{{ module.big_image.src }}" class="big-img">
+        <h2>{{ module.subtitle }}</h2>
+    </div>
+</section>
+
+
+<style>
+
+.hero-big-center-image{
+    background: url({{ module.background_image.src }}) no-repeat center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    display: flex;
+}
+</style>

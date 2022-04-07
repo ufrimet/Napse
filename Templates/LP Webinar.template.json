@@ -1,0 +1,120 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Napse/CSS/Style.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "<script type=\"text/javascript\" async src=\"https://play.vidyard.com/embed/v4.js\"></script>",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_162033113733746",
+        "label" : "NPS - Webinar video",
+        "type" : "custom_widget",
+        "params" : {
+          "button" : {
+            "button_text" : "CONTÁCTANOS"
+          },
+          "button_text" : "Contáctanos",
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "fixed_image" : {
+            "alt" : "foto NL NPS 1",
+            "height" : 1000,
+            "loading" : "lazy",
+            "size_type" : "auto",
+            "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/foto%20NL%20NPS%201.jpg",
+            "width" : 1000,
+            "max_width" : 1000,
+            "max_height" : 1000
+          },
+          "modal_title" : "Inscríbete al webinar",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Webinar video",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "subtitle" : "Mirá el video para conocer cómo ayudamos a Napse a estar siempre cerca de su capital humano.",
+          "title" : "Caso de Éxito: Napse",
+          "title_modal_contact" : "",
+          "widget_name" : "NPS - Webinar video",
+          "wrapping_html" : "",
+          "background_image" : {
+            "size_type" : "auto",
+            "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/shutterstock_1040029219%20gradient-2.jpg",
+            "alt" : "shutterstock_1040029219 gradient-2",
+            "loading" : "lazy",
+            "width" : 7360,
+            "height" : 4912,
+            "max_width" : 7360,
+            "max_height" : 4912
+          }
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

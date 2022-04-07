@@ -1,0 +1,53 @@
+.filtros-etiquetas ul li{
+  width: 185px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.filtros-etiquetas ul li:not(:first-child){
+  border-left: 1px solid;
+}
+
+.filtros-etiquetas ul{
+  flex-direction: row;
+  display: flex;
+}
+
+.filtros-etiquetas ul li a{
+  text-decoration: none;
+  color: #411E5A;
+  cursor: pointer;
+}
+
+.blog .box-cards{
+  display: flex;
+  flex-direction: row;
+}
+
+.blog{
+  padding-bottom: 50px !important;
+}
+
+.blog hr{
+  background-color: #FFB914 !important;
+}
+
+.blog .secondary-button{
+  margin-top: 50px;
+}
+
+.blog .box-card{
+  margin: 0 20px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .blog .box-cards{
+    flex-direction: column;
+  }
+  
+  .blog .box-card{
+    margin-top: 20px;
+  }
+  
+}

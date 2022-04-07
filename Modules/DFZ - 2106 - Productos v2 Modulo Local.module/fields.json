@@ -1,0 +1,173 @@
+[ {
+  "id" : "20f84b96-033b-f9fd-a2ca-d0826c859a09",
+  "name" : "background_image",
+  "label" : "Background image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "f51f89db-c927-ace4-59a7-46abe71de079",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Productos"
+}, {
+  "id" : "003eeddb-35f7-12e4-2e7f-811ea3377cbf",
+  "name" : "separador",
+  "label" : "separador",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Vector%209.png",
+    "alt" : "Vector 9",
+    "loading" : "lazy",
+    "width" : 36,
+    "height" : 11
+  }
+}, {
+  "id" : "8878474f-a510-4b63-b3ce-77dd8a627c7b",
+  "name" : "carpetas",
+  "label" : "Carpetas",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 6
+  },
+  "children" : [ {
+    "id" : "9428eeff-1aad-8507-2e60-7ea09ff3c5e8",
+    "name" : "imagen",
+    "label" : "Imagen",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/logo-napse-bridge-1.png",
+      "alt" : "logo-napse-bridge-1",
+      "loading" : "lazy",
+      "width" : 146,
+      "height" : 83
+    }
+  }, {
+    "id" : "8117d251-6f64-eff2-caca-3efdcfd50093",
+    "name" : "texto",
+    "label" : "Texto",
+    "required" : false,
+    "locked" : false,
+    "type" : "richtext",
+    "default" : "<p><strong>Lorem Ipsum is simply dummy text</strong> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : [ {
+    "imagen" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/logo-napse-bridge-1.png",
+      "alt" : "logo-napse-bridge-1",
+      "loading" : "lazy",
+      "width" : 146,
+      "height" : 83
+    },
+    "texto" : "<p><strong>Lorem Ipsum is simply dummy text</strong> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>"
+  }, {
+    "imagen" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/logo-napse-bridge%20(2).png",
+      "alt" : "logo-napse-bridge (2)",
+      "loading" : "lazy",
+      "width" : 146,
+      "height" : 83
+    },
+    "texto" : "<p><strong>Lorem Ipsum is simply dummy text</strong> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>"
+  }, {
+    "imagen" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/logo-napse-bridge%20(4).png",
+      "alt" : "logo-napse-bridge (4)",
+      "loading" : "lazy",
+      "width" : 146,
+      "height" : 83
+    },
+    "texto" : "<p><strong>Lorem Ipsum is simply dummy text</strong> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>"
+  }, {
+    "imagen" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/logo-napse-bridge%20(1).png",
+      "alt" : "logo-napse-bridge (1)",
+      "loading" : "lazy",
+      "width" : 146,
+      "height" : 83
+    },
+    "texto" : "<p><strong>Lorem Ipsum is simply dummy text</strong> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>"
+  }, {
+    "imagen" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/logo-napse-bridge%20(3).png",
+      "alt" : "logo-napse-bridge (3)",
+      "loading" : "lazy",
+      "width" : 137,
+      "height" : 78
+    },
+    "texto" : "<p><strong>Lorem Ipsum is simply dummy text</strong> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>"
+  }, {
+    "imagen" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/logo-napse-bridge%20(5).png",
+      "alt" : "logo-napse-bridge (5)",
+      "loading" : "lazy",
+      "width" : 146,
+      "height" : 83
+    },
+    "texto" : "<p><strong>Lorem Ipsum is simply dummy text</strong> of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>"
+  } ]
+}, {
+  "id" : "b278fac3-8866-8464-07a5-28485d7db52e",
+  "name" : "button_text",
+  "label" : "button text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "ENVIAR"
+}, {
+  "id" : "82a62455-dee2-7287-acbb-c69124d31f87",
+  "name" : "url_button",
+  "label" : "URL button",
+  "required" : false,
+  "locked" : false,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "url",
+  "default" : {
+    "content_id" : null,
+    "href" : "",
+    "type" : "EXTERNAL"
+  }
+} ]

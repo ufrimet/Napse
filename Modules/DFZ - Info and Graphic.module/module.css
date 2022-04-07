@@ -1,0 +1,39 @@
+
+
+.info-graphic{ padding: 50px 0; }
+
+.info-graphic .container{ text-align: center; }
+
+.info-graphic .container h3 { color: white !important; }
+
+.info-graphic .container span{
+    font-size: 20px;
+    color: #ffb900;
+    text-transform: initial;
+    line-height: 1.5em;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.info-graphic .container img{
+    height: 780px;
+    width: 700px;
+    margin: auto;
+}
+
+
+@media (max-width: 768px) {
+  
+    .info-graphic .container img{
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+    }
+
+}
+
+height: ;
+
+margin: auto;

@@ -1,0 +1,71 @@
+.alignment-box{
+  /*margin: 50px auto !important;*/
+  justify-content: initial !important;
+}
+
+.box-hero img{
+  width: 163px;
+  height: 82px;
+}
+
+.box h1{
+  font-size: 72px;
+}
+
+.box-hero h2{
+  margin: 28px 0px;
+}
+
+.hero-class{
+  height: 600px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero-class{
+    height: 650px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .box h1 {
+    font-size: 40px;
+  }
+  
+  .box h2 {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .box h1 {
+    font-size: 38px;
+  }
+  
+  .box h2 {
+    font-size: 20px;
+  }
+}
+
+
+#scrollTopBtn {
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 9999; /* Make sure it does not overlap */
+  outline: none; /* Remove outline */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  border-color: white;
+  width: 62px;
+  height: 62px;
+  filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.37));
+  background-color: #411e5a;
+  border-width: 1px;
+  border-style: solid;
+}
+
+#scrollTopBtn:hover {
+  opacity: .8;
+}

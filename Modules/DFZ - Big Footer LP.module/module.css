@@ -1,0 +1,41 @@
+
+
+
+
+.big-footer-lp .container{
+    padding: 70px 0 90px;
+}
+
+.big-footer-lp h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+.big-footer-lp .main-button{
+    max-width: fit-content;
+    padding: 25px 20px;
+    margin: 24px auto 0;
+}
+
+.big-footer-lp .footer-line{
+    height: 1px;
+    margin: 80px 0;
+}
+
+.big-footer-lp .logos{
+    text-align: center;
+}
+
+.big-footer-lp .logos img{
+    margin: 0 10px;
+    max-width: 146px;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .big-footer-lp .footer-line {
+        margin: 80px auto;
+        width: 85%;
+    }
+}

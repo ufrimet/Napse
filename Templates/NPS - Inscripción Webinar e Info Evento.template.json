@@ -1,0 +1,235 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Napse/CSS/Style.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "<style>\n  .hs_recaptcha{\n    width: 50% !important;\n  }\n  .actions{\n    display: flex;\n    justify-content: flex-end;\n  }\n  .hs-button{\n    width: 100px;\n    margin-left: 0;\n    height: 40px;\n  }\n  textarea,\n  select,\n  input[type=email],\n  input[type=text],\n  input[type=tel]{\n    width: 100% !important;\n  }\n  .submitted-message{\n    color: white !important;\n    font-size: 20px;\n    padding: 0 20px;\n    text-align: center;\n    max-width: 450px;\n  }\n  .left-side-lp h2{\n    max-width: 450px;\n  }\n  @media(max-width:768px){\n    .hs_recaptcha, .hs-submit{\n      width: 100%;\n    }\n    .actions{\n      justify-content: center;\n    }\n  }\n</style>\n",
+  "customFooter" : "<script>\n  \n  $(document).ready(function(){\n    \n    window.addEventListener('message', async(event) => {\n      if(event.data.eventName === 'onFormReady') {\n        $('.legal-consent-container input').trigger('click')\n      }\n    })\n    \n  })\n  \n</script>",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_162276979692239",
+        "label" : "NPS - Hero Forms Eventos",
+        "type" : "custom_widget",
+        "params" : {
+          "background_image" : {
+            "alt" : "Copia de Sin título (1) (1)",
+            "height" : 350,
+            "loading" : "lazy",
+            "max_height" : 350,
+            "max_width" : 600,
+            "size_type" : "auto",
+            "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Copia%20de%20Sin%20t%C3%ADtulo%20(1)%20(1).png",
+            "width" : 600
+          },
+          "box" : {
+            "logo" : {
+              "alt" : "NapseTalks",
+              "height" : 90,
+              "loading" : "lazy",
+              "max_height" : 1653,
+              "max_width" : 1835,
+              "size_type" : "exact",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/NapseTalks.png",
+              "width" : 100
+            },
+            "subtitle" : "Inscribite gratis a un webinar único para conocer la mejor manera para integrar todos los medios de pago de tu negocio y hacer crecer a tu empresa",
+            "title" : "Webinar:<br>¿Cómo integrar<br>medios de pagos?"
+          },
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "logo_napse" : {
+            "alt" : "Logo-Napse-blanco",
+            "height" : 51,
+            "loading" : "lazy",
+            "max_height" : 614,
+            "max_width" : 1200,
+            "size_type" : "exact",
+            "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Logo-Napse-blanco.png",
+            "width" : 100
+          },
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Hero Forms Eventos",
+          "per_widget_wrapper_html" : "",
+          "right_side" : {
+            "form" : {
+              "form_id" : "cdc223e4-0fb9-4151-8dd9-406b1ceed0e6",
+              "form_type" : "HUBSPOT",
+              "message" : "<p>Thanks for submitting the form.</p>",
+              "response_type" : "inline"
+            },
+            "title_form" : "Registrate gratis"
+          },
+          "schema_version" : 2,
+          "widget_name" : "NPS - Hero Forms Eventos",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1622809074097421",
+        "label" : "NPS - Events Cards",
+        "type" : "custom_widget",
+        "params" : {
+          "background_image" : {
+            "alt" : "a47c41620a8f4889e58093b185ed411c",
+            "height" : 1080,
+            "loading" : "lazy",
+            "max_height" : 1080,
+            "max_width" : 1920,
+            "size_type" : "auto",
+            "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/a47c41620a8f4889e58093b185ed411c.png",
+            "width" : 1920
+          },
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "date_card" : {
+            "date_text" : "15 JUNIO | 2021<br>11:30 AM",
+            "icon" : {
+              "alt" : "Diseño sin título (32)",
+              "height" : 500,
+              "loading" : "lazy",
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(32).png",
+              "width" : 500,
+              "max_width" : 500,
+              "max_height" : 500
+            }
+          },
+          "moderadores_card" : {
+            "icon" : {
+              "alt" : "Diseño sin título (31)",
+              "height" : 500,
+              "loading" : "lazy",
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(31).png",
+              "width" : 500,
+              "max_width" : 500,
+              "max_height" : 500
+            },
+            "moderador" : [ {
+              "company_name" : "Nombre empresa",
+              "name_moderador" : "Juan Perez Montengro",
+              "position" : "Puesto"
+            }, {
+              "company_name" : "Nombre empresa",
+              "name_moderador" : "Juan Perez Montengro",
+              "position" : "Puesto"
+            } ],
+            "title" : "MODERADORES"
+          },
+          "oradores_card" : {
+            "icon" : {
+              "alt" : "Diseño sin título (33)",
+              "height" : 500,
+              "loading" : "lazy",
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(33).png",
+              "width" : 500,
+              "max_width" : 500,
+              "max_height" : 500
+            },
+            "orador" : [ {
+              "company_name" : "Nombre Empresa",
+              "name_orador" : "Juan Perez Montengro",
+              "position" : "Puesto"
+            }, {
+              "company_name" : "Nombre empresa",
+              "name_orador" : "Juan Perez Montengro",
+              "position" : "Puesto"
+            }, {
+              "company_name" : "Nombre empresa",
+              "name_orador" : "Juan Perez Montengro",
+              "position" : "Puesto"
+            } ],
+            "title" : "ORADORES"
+          },
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Events Cards",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "title" : "Sobre el evento",
+          "widget_name" : "NPS - Events Cards",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

@@ -1,0 +1,71 @@
+
+
+
+{# 2107 - Uriel Frimet #}
+
+
+{# MOBILE #}
+<div class="testimonials-mobile" style="background-color: {{ module.style.background_color.color }};">
+  <div class="container">
+    {% for item in module.items %}
+      <div class="info-mobile">
+        <h1>{{ item.title }}</h1>
+        <p>{{ item.description }}</p>  
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{# DESKTOP #}
+<div class="testimonials" style="background-color: {{ module.style.background_color.color }};">
+  <div class="container">
+      {% for item in module.items %}
+      {% set numeroDeItem = loop.index %}
+      <div class="faq-item" id="item-{{ loop.index }}">
+        <div class="info-container" >
+
+          <div class="info-side">
+            <div class="border-bottom"> <h1>{{ item.title }}</h1> </div>
+          </div>
+
+          <div class="right-side">
+            <p>{{ item.description }}</p>  
+          </div>
+        </div>
+
+        <div class="pagination">
+        {% for item in module.items %}
+        <a {% if loop.index == numeroDeItem %} class="dot-pagination dot-pagination-active" {% else %} class="dot-pagination" {% endif %} href="#item-{{ loop.index }}"></a>
+        {% endfor %}
+        </div>
+
+      </div>
+      {% endfor %}
+  </div>
+</div>
+
+<style>
+  
+  .faq-item .info-side h1,
+  .faq-item .info-side p,
+  .faq-item .info-side a{
+    color: {{ module.style.text_color.color }};
+  }
+
+  .splide-testimonial .splide__pagination__page{
+    width: {{ module.style.dots.width }}px;
+    height: {{ module.style.dots.height }}px;
+    background: {{ module.style.dots.color.color }};
+    border-radius: {{ module.style.dots.border_radius }}%;
+    margin: {{ module.style.dots.margin }}px;
+    border: {{ module.style.dots.border_width }}px solid {{ module.style.dots.border_color.color }};
+  }
+  
+  .splide-testimonial .splide__pagination__page.is-active {
+    transform: scale({{ module.style.dots.active.scale }});
+    background: {{ module.style.dots.active.color.color }};
+    border: {{ module.style.dots.border_width }}px solid {{ module.style.dots.active.color.color }};
+  }
+  
+
+</style>

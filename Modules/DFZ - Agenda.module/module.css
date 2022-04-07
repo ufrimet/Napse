@@ -1,0 +1,90 @@
+
+
+
+
+.agenda{
+    display: flex;
+    min-height: 600px;
+}
+
+.agenda .container{
+    align-items: center;
+}
+
+.agenda .container h3{
+    text-align: center;
+    color: white;
+}
+
+.agenda .separador-v2{
+    margin: 30px 0 40px;
+}
+
+.agenda .fechas{
+    max-width: 1080px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.agenda .fechas .fecha{
+    display: flex;
+    flex-direction: column;
+    background: #63C3D1;
+    width: 175px;
+    height: 230px;
+    border-radius: 10px;
+    padding: 15px 12px;
+    color: white;
+    margin: 15px;
+}
+
+.agenda .fechas .fecha .top{
+    display: flex;
+    justify-content: space-between;
+    height: 65%;
+}
+
+.agenda .fechas .fecha .top img{
+    height: 20px;
+}
+
+.agenda .fechas .fecha .top .info-fecha{
+    display: flex;
+    flex-direction: column;
+}
+
+.agenda .fechas .fecha .top .info-fecha span:first-child{
+    font-size: 64px;
+    font-weight: 700;
+    margin: -20px 0 0 auto;
+}
+
+.agenda .fechas .fecha .top .info-fecha span:last-child{
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.agenda .fechas .fecha .bottom{
+    height: 35%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.agenda .fechas .fecha .bottom a{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+@media (max-width: 767px) {
+    .agenda .container {
+        margin: 40px 0;
+    }
+}
+

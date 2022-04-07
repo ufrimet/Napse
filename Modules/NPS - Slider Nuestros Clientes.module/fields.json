@@ -1,0 +1,134 @@
+[ {
+  "id" : "f903f13e-1544-675d-7bd4-42a3a09c02e2",
+  "name" : "background_image",
+  "label" : "Background image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "6a7f3864-10c8-af07-478f-5a0b35a9b4c0",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "411607f1-43b7-afc8-cd43-53fbf5669882",
+  "name" : "separador",
+  "label" : "Separador",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Vector%209.png",
+    "alt" : "Vector 9",
+    "loading" : "lazy",
+    "width" : 36,
+    "height" : 11,
+    "max_width" : 36,
+    "max_height" : 11
+  }
+}, {
+  "id" : "7f1531df-85fa-159b-f7a9-d6b6eb521439",
+  "name" : "images",
+  "label" : "Images",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "275ce9ca-ba91-118b-693c-e5c816cb8014",
+    "name" : "image",
+    "label" : "Image",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : false,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "image" : {
+      "size_type" : "auto",
+      "src" : "",
+      "alt" : null,
+      "loading" : "lazy"
+    }
+  }
+}, {
+  "id" : "23a2dd26-0933-b7c4-bf88-5cb18574ba5f",
+  "name" : "carousel",
+  "label" : "Carousel",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "80fc5893-9f24-cada-d256-bbff61762ebd",
+    "name" : "on_off",
+    "label" : "ON / OFF",
+    "required" : false,
+    "locked" : false,
+    "display" : "checkbox",
+    "type" : "boolean",
+    "default" : false
+  }, {
+    "id" : "a2f13c67-a84f-3e56-f618-2993587aa0f5",
+    "name" : "speed",
+    "label" : "Speed",
+    "inline_help_text" : "miliseconds",
+    "required" : false,
+    "locked" : false,
+    "display" : "text",
+    "min" : 2000,
+    "step" : 500,
+    "type" : "number",
+    "default" : 5000
+  }, {
+    "id" : "7a5b0d38-ac2b-922d-2af1-6d29af02a579",
+    "name" : "carousel_id",
+    "label" : "Carousel ID",
+    "required" : false,
+    "locked" : true,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "dfz-carousel-templates"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "on_off" : false,
+    "speed" : 5000,
+    "carousel_id" : "dfz-carousel-templates"
+  }
+} ]

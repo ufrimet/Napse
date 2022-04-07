@@ -1,0 +1,219 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Napse/CSS/Style.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "<style>\n  .hs_recaptcha{\n    width: 50% !important;\n  }\n  .actions{\n    display: flex;\n    justify-content: flex-end;\n  }\n  .hs-button{\n    /* width: 100px;\n    margin-left: 0; */\n    width: auto;\n    padding: 0 25px;\n    height: 40px;\n  }\n  textarea,\n  select,\n  input[type=email],\n  input[type=text],\n  input[type=tel]{\n    width: 100% !important;\n  }\n  .submitted-message{\n    color: white !important;\n    font-size: 20px;\n    padding: 0 20px;\n    text-align: center;\n    max-width: 450px;\n  }\n  .left-side-lp h2{\n    max-width: 450px;\n  }\n  @media(max-width:768px){\n    .hs_recaptcha, .hs-submit{\n      width: 100%;\n    }\n    .actions{\n      justify-content: center;\n    }\n  }\n</style>\n",
+  "customFooter" : "<script>\n  \n  $(document).ready(function(){\n    \n    window.addEventListener('message', async(event) => {\n      if(event.data.eventName === 'onFormReady') {\n        $('.legal-consent-container input').trigger('click')\n      }\n    })\n    \n  })\n  \n</script>",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1623341708131163",
+        "label" : "NPS - Hero Forms Eventos Big Hero",
+        "type" : "custom_widget",
+        "params" : {
+          "background_image" : {
+            "alt" : "Diseño sin título (39)",
+            "height" : 175,
+            "loading" : "lazy",
+            "max_height" : 175,
+            "max_width" : 300,
+            "size_type" : "auto",
+            "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(39).png",
+            "width" : 300
+          },
+          "box" : {
+            "logo" : {
+              "src" : ""
+            },
+            "subtitle" : "Te invitamos a Napse Meet, un encuentro donde te contaremos las novedades de nuestros producto y, además, te sorprenderemos con una experiencia única desde la comodidad de tu casa.<br>FECHA: 15 de julio<br>HORA: 18:30 ARG / 16:30 MEX",
+            "title" : "Napse Meet: Un evento único para conocernos mejor."
+          },
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "logo_napse" : {
+            "alt" : "Logo-Napse-blanco",
+            "height" : 51,
+            "loading" : "lazy",
+            "max_height" : 614,
+            "max_width" : 1200,
+            "size_type" : "exact",
+            "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Logo-Napse-blanco.png",
+            "width" : 100
+          },
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Hero Forms Eventos Big Hero",
+          "per_widget_wrapper_html" : "",
+          "right_side" : {
+            "form" : {
+              "form_id" : "0639eade-835c-416b-9729-b10a8aaeaf06",
+              "form_type" : "HUBSPOT",
+              "message" : "<p>Gracias por inscribirte a Napse Meets. Te esperamos en nuestro encuentro el dia 15 de julio.</p>",
+              "response_type" : "inline"
+            },
+            "title_form" : "Registrate ahora"
+          },
+          "schema_version" : 2,
+          "widget_name" : "NPS - Hero Forms Eventos Big Hero",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_162333817054029",
+        "label" : "NPS - Events Cards v2",
+        "type" : "custom_widget",
+        "params" : {
+          "background_image" : {
+            "alt" : "a47c41620a8f4889e58093b185ed411c",
+            "height" : 1080,
+            "loading" : "lazy",
+            "max_height" : 1080,
+            "max_width" : 1920,
+            "size_type" : "auto",
+            "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/a47c41620a8f4889e58093b185ed411c.png",
+            "width" : 1920
+          },
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "date_card" : {
+            "date_text" : "45sd 5s",
+            "icon" : {
+              "alt" : "Diseño sin título (32)-1",
+              "height" : 500,
+              "loading" : "lazy",
+              "max_height" : 500,
+              "max_width" : 500,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(32)-1.png",
+              "width" : 500
+            },
+            "show" : true
+          },
+          "moderadores_card" : {
+            "icon" : {
+              "alt" : "Diseño sin título (31)-1",
+              "height" : 500,
+              "loading" : "lazy",
+              "max_height" : 500,
+              "max_width" : 500,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(31)-1.png",
+              "width" : 500
+            },
+            "moderador" : [ {
+              "company_name" : "empresa",
+              "name_moderador" : "Jorge gonzalez",
+              "position" : "posicion"
+            } ],
+            "show" : true,
+            "title" : "Moderadores"
+          },
+          "oradores_card" : {
+            "icon" : {
+              "alt" : "Diseño sin título (33)-1",
+              "height" : 500,
+              "loading" : "lazy",
+              "max_height" : 500,
+              "max_width" : 500,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(33)-1.png",
+              "width" : 500
+            },
+            "orador" : [ {
+              "company_name" : "empresa",
+              "name_orador" : "Pedro rodrigez",
+              "position" : "posicion"
+            } ],
+            "show" : true,
+            "title" : "Oradores"
+          },
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Events Cards v2",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "title" : "Sobre el evento",
+          "widget_name" : "NPS - Events Cards v2",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

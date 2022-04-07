@@ -1,0 +1,56 @@
+[ {
+  "id" : "9e8caed1-8c56-613e-4051-a659ca5c2e17",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : true,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Reciba nuestras<br>novedades por email "
+}, {
+  "id" : "f06bcad2-b171-fa6d-5636-3eeec1f15808",
+  "name" : "form",
+  "label" : "Form",
+  "required" : false,
+  "locked" : true,
+  "type" : "form",
+  "default" : {
+    "form_id" : "02b7a6ad-2c74-4396-8299-86d2c4c9ccb6",
+    "response_type" : "inline",
+    "message" : "<p>Gracias por completar el formulario.</p>",
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+}, {
+  "id" : "fce5fd05-1eff-89ba-2297-c12de6464cce",
+  "name" : "politicas_de_privacidad",
+  "label" : "Politicas de privacidad",
+  "required" : false,
+  "locked" : true,
+  "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+  "type" : "link",
+  "default" : {
+    "url" : {
+      "content_id" : null,
+      "type" : "EXTERNAL",
+      "href" : ""
+    },
+    "open_in_new_tab" : false,
+    "no_follow" : false
+  }
+}, {
+  "id" : "9e982a96-7013-36b9-d975-971e9cf870e0",
+  "name" : "image_field",
+  "label" : "Imagen",
+  "required" : false,
+  "locked" : true,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "src" : ""
+  }
+} ]

@@ -1,0 +1,584 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 6,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Napse/CSS/Carousel.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/Napse/CSS/Style.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "<link rel=\"preload\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\">\n<noscript><link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css\"></noscript>\n<meta property=\"og:image\" content=\"https://f.hubspotusercontent10.net/hubfs/9130015/NPS_2104_Blog-2v2.png\">",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_161724756783566",
+        "label" : "NPS - Menu",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Menu",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Menu",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_161724760293577",
+        "label" : "NPS - Violet Tags Menu",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "position: absolute; z-index: 1;",
+          "items" : [ {
+            "item_link" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "https://www.napse.global/prensa",
+                "type" : "EXTERNAL"
+              }
+            },
+            "item_name" : "Prensa"
+          }, {
+            "item_link" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "type" : "EXTERNAL",
+                "href" : "https://info.napse.global/categoria/gestion-y-experiencia"
+              }
+            },
+            "item_name" : "Gestión<br>y experiencia"
+          }, {
+            "item_link" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "type" : "EXTERNAL",
+                "href" : "https://info.napse.global/categoria/tecnologia-e-innovacion"
+              }
+            },
+            "item_name" : "Tecnología<br>e innovación"
+          }, {
+            "item_link" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "type" : "EXTERNAL",
+                "href" : "https://info.napse.global/categoria/tendencias-y-analisis"
+              }
+            },
+            "item_name" : "Tendencias<br>y análisis"
+          }, {
+            "item_link" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "type" : "EXTERNAL",
+                "href" : "https://info.napse.global/categoria/transformacion-digital"
+              }
+            },
+            "item_name" : "Transformación digital"
+          } ],
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Violet Tags Menu",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Violet Tags Menu",
+          "wrapping_html" : "<style>\n  .hs-collapsed{\n    display: none !important;\n  }\n</style>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "position: absolute; z-index: 1;",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1617247793033179",
+        "label" : "NPS - Hero Slider",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "items" : [ {
+            "image" : {
+              "alt" : "2703e612858c7715900fcf73adafc078",
+              "height" : 1333,
+              "loading" : "lazy",
+              "max_height" : 1333,
+              "max_width" : 2000,
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/2703e612858c7715900fcf73adafc078.jpg",
+              "width" : 2000
+            },
+            "link_button" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "",
+                "type" : "EXTERNAL"
+              }
+            },
+            "subtitle" : "Lorem Ipsum is simply dummy<br>text of the printing.",
+            "title" : "Lorem Ipsum"
+          }, {
+            "image" : {
+              "alt" : "2703e612858c7715900fcf73adafc078",
+              "height" : 1333,
+              "loading" : "lazy",
+              "max_height" : 1333,
+              "max_width" : 2000,
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/2703e612858c7715900fcf73adafc078.jpg",
+              "width" : 2000
+            },
+            "link_button" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "",
+                "type" : "EXTERNAL"
+              }
+            },
+            "subtitle" : "Lorem Ipsum is simply dummy<br>text of the printing.",
+            "title" : "Lorem Ipsum"
+          }, {
+            "image" : {
+              "alt" : "2703e612858c7715900fcf73adafc078",
+              "height" : 1333,
+              "loading" : "lazy",
+              "max_height" : 1333,
+              "max_width" : 2000,
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/2703e612858c7715900fcf73adafc078.jpg",
+              "width" : 2000
+            },
+            "link_button" : {
+              "no_follow" : false,
+              "open_in_new_tab" : false,
+              "url" : {
+                "href" : "",
+                "type" : "EXTERNAL"
+              }
+            },
+            "subtitle" : "Lorem Ipsum is simply dummy<br>text of the printing.",
+            "title" : "Lorem Ipsum"
+          } ],
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Hero Slider",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Hero Slider",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1617247957361240",
+        "label" : "Grupo de módulos",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "gestion-y-experiencia",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1617247954847227",
+            "label" : "NPS - Post por Tag",
+            "type" : "custom_widget",
+            "params" : {
+              "carousel" : {
+                "carousel_id" : "dfz-carousel-gestion"
+              },
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : true,
+              "path" : "/Napse/Modules/NPS - Post por Tag",
+              "per_widget_wrapper_html" : "",
+              "schema_version" : 2,
+              "separador_color" : {
+                "color" : "#EE462E",
+                "opacity" : 100
+              },
+              "title" : "Gestión<br>y experiencia",
+              "widget_name" : "NPS - Post por Tag",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "gestion-y-experiencia",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1617248023119307",
+        "label" : "Grupo de módulos",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "tecnologia-e-innovacion",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1617248017634294",
+            "label" : "NPS - Post por Tag",
+            "type" : "custom_widget",
+            "params" : {
+              "background_image" : {
+                "alt" : "380db7d46401ceba341265ff0d7fed65",
+                "height" : 1080,
+                "loading" : "lazy",
+                "max_height" : 1080,
+                "max_width" : 1920,
+                "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/380db7d46401ceba341265ff0d7fed65.png",
+                "width" : 1920
+              },
+              "carousel" : {
+                "carousel_id" : "dfz-carousel-tecnologia"
+              },
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : true,
+              "path" : "/Napse/Modules/NPS - Post por Tag",
+              "per_widget_wrapper_html" : "",
+              "schema_version" : 2,
+              "separador_color" : {
+                "color" : "#63C3D1",
+                "opacity" : 100
+              },
+              "tag_posts" : "tecnología-e-innovación",
+              "title" : "Tecnología<br>e innovación",
+              "widget_name" : "NPS - Post por Tag",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "tecnologia-e-innovacion",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1617248163472406",
+        "label" : "Grupo de módulos",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "tendencias-y-analisis",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1617248151737383",
+            "label" : "NPS - Post por Tag",
+            "type" : "custom_widget",
+            "params" : {
+              "carousel" : {
+                "carousel_id" : "dfz-carousel-tendencias"
+              },
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : true,
+              "path" : "/Napse/Modules/NPS - Post por Tag",
+              "per_widget_wrapper_html" : "",
+              "schema_version" : 2,
+              "separador_color" : {
+                "color" : "#411E5A",
+                "opacity" : 100
+              },
+              "tag_posts" : "tendencias-y-análisis",
+              "title" : "Tendencias<br>y análisis",
+              "widget_name" : "NPS - Post por Tag",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "tendencias-y-analisis",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1617248225601469",
+        "label" : "Grupo de módulos",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "transformacion-digital",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1617248220037456",
+            "label" : "NPS - Post por Tag",
+            "type" : "custom_widget",
+            "params" : {
+              "background_image" : {
+                "alt" : "380db7d46401ceba341265ff0d7fed65",
+                "height" : 1080,
+                "loading" : "lazy",
+                "max_height" : 1080,
+                "max_width" : 1920,
+                "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/380db7d46401ceba341265ff0d7fed65.png",
+                "width" : 1920
+              },
+              "carousel" : {
+                "carousel_id" : "dfz-carousel-transformacion"
+              },
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "",
+              "overrideable" : true,
+              "path" : "/Napse/Modules/NPS - Post por Tag",
+              "per_widget_wrapper_html" : "",
+              "schema_version" : 2,
+              "separador_color" : {
+                "color" : "#3D3D3D",
+                "opacity" : 100
+              },
+              "tag_posts" : "transformación-digital",
+              "title" : "Transformación digital",
+              "widget_name" : "NPS - Post por Tag",
+              "wrapping_html" : ""
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "transformacion-digital",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1617742032834277",
+        "label" : "NPS - Suscripcion global",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Suscripcion global version 2",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Suscripcion global version 2",
+          "wrapping_html" : "<div id=\"form\">\n  {{ html }}\n</div>"
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_161724757845068",
+        "label" : "NPS - Footer",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Footer copy 2",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Footer copy 2",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

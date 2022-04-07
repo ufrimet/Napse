@@ -1,0 +1,91 @@
+[ {
+  "id" : "9930109f-565f-10b3-96d8-43864e9f939e",
+  "name" : "background_image",
+  "label" : "Background image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/shutterstock_1040029219%20gradient-2.jpg",
+    "alt" : "shutterstock_1040029219 gradient-2",
+    "loading" : "lazy",
+    "width" : 7360,
+    "height" : 4912,
+    "max_width" : 7360,
+    "max_height" : 4912
+  }
+}, {
+  "id" : "6c382adc-a618-72ac-23cc-7d9bf0aa6b19",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "cb6fcca8-131a-de03-cc25-ecb4268d5983",
+  "name" : "subtitle",
+  "label" : "Subtitle",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "c14dd09c-20a7-5b17-e6fc-802bd15f48d6",
+  "name" : "fixed_image",
+  "label" : "Fixed Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "764a37d5-e1c2-ec47-3cee-1435e23b1b17",
+  "name" : "videoplayer_field",
+  "label" : "Video",
+  "required" : false,
+  "locked" : false,
+  "resizable" : true,
+  "show_preview" : true,
+  "type" : "videoplayer",
+  "default" : {
+    "player_id" : 46594359356,
+    "height" : 1080,
+    "width" : 1920
+  }
+}, {
+  "id" : "bbbf5340-4f9e-5ab0-df5d-05d2c4ee6739",
+  "name" : "button_text",
+  "label" : "Button text",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "20c31824-852b-b688-c041-da2c97db02ef",
+  "name" : "modal_title",
+  "label" : "Modal Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+} ]

@@ -1,0 +1,15 @@
+.carousel{
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+}
+
+.dfz-valores .carousel .carousel-item img{
+  /*max-width: 115px;
+  height: 50px;*/
+  filter: grayscale(100%);
+}
+
+.dfz-valores .carousel .carousel-item img:hover{
+  filter: grayscale(0%);
+}

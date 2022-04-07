@@ -1,0 +1,29 @@
+<div class="al-ju-center" style="background: rgb(255,255,255);
+            background: linear-gradient(340deg, rgba(255,255,255,1) 0%,
+            rgba(86,28,128,1) 45%);
+            min-height: 200px;">
+  <div class="suscription-box container">
+    
+    <div class="title-suscription">
+      <img src="{{ module.image_title.src }}">
+      <span>{{ module.title }}</span>
+    </div>
+
+    <div class="suscription">
+      {% form
+        form_to_use="{{ module.form.form_id }}"
+        response_response_type="{{ module.form.response_type }}"
+        response_message="{{ module.form.message }}"
+        response_redirect_id="{{ module.form.redirect_id }}"
+        response_redirect_url="{{module.form.redirect_url}}"
+        gotowebinar_webinar_key="{{ module.form.gotowebinar_webinar_key }}"
+      %}
+      
+      <div class="tyc">
+        <span>Estos datos se utilizarán de acuerdo con nuestras <a href="{{ module.politicas_de_privacidad.url.href }}">políticas de privacidad.</a></span>
+      </div>
+    </div>
+    
+  </div>
+  
+</div>

@@ -1,0 +1,301 @@
+[ {
+  "id" : "d34b9f75-6d82-7e7b-3aee-de776b059f28",
+  "name" : "id_slider",
+  "label" : "ID Slider",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "name-splide"
+}, {
+  "id" : "35fd0283-c061-3f33-daef-52816b227ad9",
+  "name" : "items",
+  "label" : "Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "e1aa60aa-ff8d-d2a7-cc98-640dc7610939",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Pescando.com"
+  }, {
+    "id" : "4f1f4749-6148-fba6-33ee-a21951e76082",
+    "name" : "description",
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using "
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "Pescando.com",
+    "description" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using "
+  }
+}, {
+  "id" : "e39a90fd-897f-4652-2b86-d2f83bd3c812",
+  "name" : "slider_functions",
+  "label" : "Slider functions",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "45f9537b-020f-af42-7921-c20c71dc957d",
+    "name" : "breakpoints",
+    "label" : "Breakpoints",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "4821768d-fa85-972d-2957-d440cb530e01",
+      "name" : "desktop_slides_per_page",
+      "label" : "Desktop - Slides per page",
+      "required" : false,
+      "locked" : true,
+      "display" : "text",
+      "step" : 1,
+      "type" : "number",
+      "default" : 1
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "desktop_slides_per_page" : 1
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "breakpoints" : {
+      "desktop_slides_per_page" : 1
+    }
+  }
+}, {
+  "id" : "040798fb-f85a-719f-acbe-a3138639979d",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "31dadf5e-6909-a960-527a-ff0a8794d277",
+    "name" : "background_color",
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }, {
+    "id" : "d4cc8d73-b5d6-599c-8876-826366487b61",
+    "name" : "text_color",
+    "label" : "Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  }, {
+    "id" : "fc46b123-fac2-4025-da6d-424d75863166",
+    "name" : "dots",
+    "label" : "Dots",
+    "required" : false,
+    "locked" : false,
+    "children" : [ {
+      "id" : "40127169-8af4-b32d-5a3e-cef3e600a109",
+      "name" : "width",
+      "label" : "Width",
+      "required" : false,
+      "locked" : false,
+      "display" : "text",
+      "step" : 1,
+      "type" : "number",
+      "default" : 8
+    }, {
+      "id" : "7343d3fb-530b-ddc2-32fd-1c750bb901fe",
+      "name" : "height",
+      "label" : "Height",
+      "required" : false,
+      "locked" : false,
+      "display" : "text",
+      "step" : 1,
+      "type" : "number",
+      "default" : 8
+    }, {
+      "id" : "74180c7d-fa24-99ac-7df6-579bf5ef1f93",
+      "name" : "color",
+      "label" : "Color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : "#999999",
+        "opacity" : 100
+      }
+    }, {
+      "id" : "84a5b623-a2d4-7177-07b5-b7458f0deab8",
+      "name" : "border_radius",
+      "label" : "Border radius",
+      "inline_help_text" : "Number in %",
+      "required" : false,
+      "locked" : false,
+      "display" : "text",
+      "step" : 1,
+      "type" : "number",
+      "default" : 50
+    }, {
+      "id" : "ea82051e-8f70-1558-6524-64c92a939ddf",
+      "name" : "margin",
+      "label" : "Margin",
+      "inline_help_text" : "Space between dots",
+      "required" : false,
+      "locked" : false,
+      "display" : "text",
+      "step" : 1,
+      "type" : "number",
+      "default" : 3
+    }, {
+      "id" : "6a2d89ff-1e54-343b-5b65-9595c0c92237",
+      "name" : "border_width",
+      "label" : "Border width",
+      "required" : false,
+      "locked" : false,
+      "display" : "text",
+      "step" : 1,
+      "type" : "number",
+      "default" : 1
+    }, {
+      "id" : "2ea9ccc5-0128-be48-b23e-95e46bca803a",
+      "name" : "border_color",
+      "label" : "Border color",
+      "required" : false,
+      "locked" : false,
+      "type" : "color",
+      "default" : {
+        "color" : null,
+        "opacity" : null
+      }
+    }, {
+      "id" : "4cd0761c-5afa-55bd-0576-0992cb9b6728",
+      "name" : "active",
+      "label" : "Active",
+      "required" : false,
+      "locked" : false,
+      "children" : [ {
+        "id" : "f6d73d34-aaa6-900f-070d-8ffe94d594be",
+        "name" : "scale",
+        "label" : "Scale",
+        "inline_help_text" : "When is active, the dot grows",
+        "required" : false,
+        "locked" : false,
+        "display" : "text",
+        "step" : 0.1,
+        "type" : "number",
+        "default" : 1.4
+      }, {
+        "id" : "549b5abf-7f6b-6b60-ba21-86a5ddf56eee",
+        "name" : "color",
+        "label" : "Color",
+        "required" : false,
+        "locked" : false,
+        "type" : "color",
+        "default" : {
+          "color" : "#00FF03",
+          "opacity" : 100
+        }
+      } ],
+      "tab" : "CONTENT",
+      "expanded" : false,
+      "type" : "group",
+      "default" : {
+        "scale" : 1.4,
+        "color" : {
+          "color" : "#00FF03",
+          "opacity" : 100
+        }
+      }
+    } ],
+    "tab" : "CONTENT",
+    "expanded" : false,
+    "type" : "group",
+    "default" : {
+      "width" : 8,
+      "height" : 8,
+      "color" : {
+        "color" : "#999999",
+        "opacity" : 100
+      },
+      "border_radius" : 50,
+      "margin" : 3,
+      "border_width" : 1,
+      "border_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "active" : {
+        "scale" : 1.4,
+        "color" : {
+          "color" : "#00FF03",
+          "opacity" : 100
+        }
+      }
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "background_color" : {
+      "color" : null,
+      "opacity" : null
+    },
+    "text_color" : {
+      "color" : "#000000",
+      "opacity" : 100
+    },
+    "dots" : {
+      "width" : 8,
+      "height" : 8,
+      "color" : {
+        "color" : "#999999",
+        "opacity" : 100
+      },
+      "border_radius" : 50,
+      "margin" : 3,
+      "border_width" : 1,
+      "border_color" : {
+        "color" : null,
+        "opacity" : null
+      },
+      "active" : {
+        "scale" : 1.4,
+        "color" : {
+          "color" : "#00FF03",
+          "opacity" : 100
+        }
+      }
+    }
+  }
+} ]

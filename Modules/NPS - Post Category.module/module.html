@@ -1,0 +1,60 @@
+<div class="container-title" style="background-image: linear-gradient(90deg, {{ module.separador_color.color }}, transparent);"> 
+  <h3 class="title-category" >{{ module.title }}</h3>
+  <img class="draw-title" src="{{ module.draw_title.src }}">
+</div>
+
+{% set my_blog = blog_recent_tag_posts( module.blog_field, module.tag_posts ) %}
+<div class="post-listing">
+  {% for post in my_blog %}
+  <div class="post-item">
+    <!-- Post Header -->
+    <div class="post-header">
+      <div class="hs-featured-image-wrapper">
+        <img src="{{ post.post_list_summary_featured_image }}" class="hs-featured-image" alt="{{ post.featured_image_alt_text | escape }}">
+      </div>
+      <hr class="separator-color" style="background-color: {{ module.separador_color.color }};">
+      <div class="post-date" style="background-color: {{ module.separador_color.color }};">{{ post.publish_date | datetimeformat('%b %e, %Y') }}</div>
+    </div>
+
+    <!-- Post Body -->
+    <div class="post-body">
+      <h2 class="post-title">{{ post.name }}</h2>
+      <div class="post-content">
+        {{ post.post_list_content | striptags | truncate(100) }}
+      </div>
+
+      <div class="post-more">
+        <a class="more-link" href="{{ post.absolute_url }}">&#8594; LEER MÁS</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<!-- Pagination -->
+{% if my_blog.total_page_count > 1 %}
+<div class="pagination-wrapper">
+  {% set page_list = [-2, -1, 0, 1, 2] %}
+  {% if my_blog.total_page_count - current_page_num == 1 %}{% set offset = -1 %}
+  {% elif my_blog.total_page_count - current_page_num == 0 %}{% set offset = -2 %}
+  {% elif current_page_num == 2 %}{% set offset = 1 %}
+  {% elif current_page_num == 1 %}{% set offset = 2 %}
+  {% else %}{% set offset = 0 %}{% endif %}
+  <a class="previous-posts-link {{ "blog-pagination__prev-link--disabled" if !last_page_num }}" href="{{ blog_page_link(last_page_num) }}">
+    {% icon name="chevron-left" style="SOLID", width="10", no_wrapper=True %}
+  </a>
+  
+  {% for page in page_list %}
+  {% set this_page = current_page_num + page + offset %}
+  {% if this_page > 0 and this_page <= my_blog.total_page_count %}
+  <a class="blog-pagination__link blog-pagination__number-link {{ "blog-pagination__link--active" if this_page == current_page_num }}" href="{{ blog_page_link(this_page) }}">
+    {{ this_page }}
+  </a>
+  {% endif %}
+  {% endfor %}
+  
+  <a class="next-posts-link {{ "blog-pagination__next-link--disabled" if !next_page_num }}" href="{{ blog_page_link(current_page_num + 1) }}">
+    {% icon name="chevron-right" style="SOLID", width="10", no_wrapper=True %}
+  </a>
+</div>
+{% endif %}

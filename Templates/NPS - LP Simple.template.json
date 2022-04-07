@@ -1,0 +1,129 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Napse/CSS/Style.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "<style>\n  .hs_recaptcha{\n    width: 50% !important;\n  }\n  .actions{\n    display: flex;\n    justify-content: flex-end;\n  }\n  .hs-button{\n    width: 100px;\n    margin-left: 0;\n    height: 40px;\n  }\n  textarea,\n  select,\n  input[type=email],\n  input[type=text],\n  input[type=tel]{\n    width: 100% !important;\n  }\n  .submitted-message{\n    color: white !important;\n    font-size: 20px;\n    padding: 0 20px;\n    text-align: center;\n    max-width: 450px;\n  }\n  .left-side-lp h2{\n    max-width: 450px;\n  }\n  @media(max-width:768px){\n    .hs_recaptcha, .hs-submit{\n      width: 100%;\n    }\n    .actions{\n      justify-content: center;\n    }\n  }\n</style>\n",
+  "customFooter" : "<script>\n  \n  $(document).ready(function(){\n    \n    window.addEventListener('message', async(event) => {\n      if(event.data.eventName === 'onFormReady') {\n        $('.legal-consent-container input').trigger('click')\n      }\n    })\n    \n  })\n  \n</script>",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_161894660625394",
+        "label" : "NPS - 2104 - Hero Form v2",
+        "type" : "custom_widget",
+        "params" : {
+          "background_image" : {
+            "alt" : "Diseño sin título (18)-1",
+            "height" : 175,
+            "loading" : "lazy",
+            "max_height" : 175,
+            "max_width" : 300,
+            "size_type" : "auto",
+            "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Dise%C3%B1o%20sin%20t%C3%ADtulo%20(18)-1.png",
+            "width" : 300
+          },
+          "box" : {
+            "logo" : {
+              "alt" : "NapseTalks",
+              "height" : 99,
+              "loading" : "lazy",
+              "max_height" : 1653,
+              "max_width" : 1835,
+              "size_type" : "exact",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/NapseTalks.png",
+              "width" : 110
+            },
+            "subtitle" : "Lorem Ipsum is simply dummy<br> text of the printing.",
+            "title" : "Lorem Ipsum<br> is not simply"
+          },
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "logo_napse" : {
+            "alt" : "Logo-Napse-blanco",
+            "height" : 67,
+            "loading" : "lazy",
+            "max_height" : 614,
+            "max_width" : 1200,
+            "size_type" : "exact",
+            "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Logo-Napse-blanco.png",
+            "width" : 130
+          },
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - 2104 - Hero Form v2",
+          "per_widget_wrapper_html" : "",
+          "right_side" : {
+            "title_form" : "Registrate gratis"
+          },
+          "schema_version" : 2,
+          "widget_name" : "NPS - 2104 - Hero Form v2",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

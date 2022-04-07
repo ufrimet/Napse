@@ -1,0 +1,37 @@
+<div class="container al-ju-center">
+  
+  <div>
+    <img src="{{ module.logo }}" class="logo">
+  </div>
+  
+  
+  <div class="mapa-sitio">
+    <ul>
+      <li>MAPA DEL SITIO</li>
+      {% for item in module.menu_footer %}
+      <li><a href="{{ item.link_item.url.href }}"></a>{{ item.text_item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  
+  
+  <div class="informacion-contacto">
+    <ul>
+      <li>OFICINAS</li>
+      <li>{{ module.ubicacion.provincia }}</li>
+      <li>{{ module.ubicacion.direccion }}</li>
+      <li>{{ module.ubicacion.cercania }}</li>
+      <li>{{ module.ubicacion.localidad }}</li>
+    </ul>
+  </div>
+  
+  
+  <div class="contacto">
+    <ul>
+      <li></li>
+      {% for icon in module.icons %}
+      <li><a href="{{ icon.icon_link.url.href }}"><i>{{ icon.icon }}</i></a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

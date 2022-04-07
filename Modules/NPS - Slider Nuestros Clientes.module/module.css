@@ -1,0 +1,66 @@
+.carousel{
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px;
+}
+
+.dfz-valores .carousel .slick-list{
+  width: 100% !important;
+}
+
+.dfz-valores .carousel .carousel-item img{
+  /*max-width: 115px;
+  height: 50px;*/
+  filter: grayscale(100%);
+  transition: .8s;
+}
+
+.webinar-slider-logos .dfz-valores .carousel .carousel-item img{
+  width: 105px;  
+}
+
+.dfz-valores .carousel .carousel-item img:hover{
+  filter: grayscale(0%);
+  transition: .8s;
+}
+
+.contenedor-slider .box h3{
+  margin-top: 50px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  /*.dfz-valores .carousel .slick-arrow{
+      display: none !important;
+  }*/
+
+  .box-icons h3{
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .dfz-valores .carousel .slick-track{
+    margin: 5px 0;
+  }
+
+  .dfz-valores .carousel .carousel-item{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    text-align: center;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 24%);
+    margin: 0 12px;
+  }
+
+  .dfz-valores .carousel .carousel-item img{
+    padding: 0 10px;
+  }
+
+  .slick-list{padding:0 20% 0 0 !important; }
+}
+

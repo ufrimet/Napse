@@ -1,0 +1,46 @@
+<div class="box box-icons container al-ju-center">
+  <h3>{{ module.title }}</h3>
+  <img class="separador" src="{{ module.separador.src }}">
+</div>
+
+<div class="filtros-etiquetas container al-ju-center">
+  
+  {% set my_tags = blog_tags('default', 250) %}
+  <ul>
+    {% for item in my_tags %}
+    <li><a>{{ item }}</a></li>
+    {% endfor %}
+  </ul>
+  
+</div>
+
+{% set rel_bps = blog_recent_posts( module.blog_field ) %}
+
+<div class='container al-ju-center blog'>
+  <div class="box-cards">
+    {% for post in rel_bps %}
+    <div class="box-card posteos">     
+      <div class="box-card-image">
+        <a href="{{post.absolute_url}}">
+          <img class="post-image" src="{{post.post_list_summary_featured_image}}" >
+          <div class="overlay"></div>
+        </a>
+        <hr>
+      </div>
+      <div class="box-card-text">
+        <p>{{post.name}}</p>
+      </div>
+      <div class="box-card-button">
+        <a>&#8594;</a>
+        <a href="{{post.absolute_url}}">Leer más</a>
+      </div>
+      
+      {% for topic in post.topic_list %}
+      <a class="topic-link" href="{{ blog_tag_url(group.id, topic.slug) }}" style="display: none;">{{ topic.name }}</a> ·
+      {% endfor %} 
+    </div>
+    {% endfor %}
+  </div>
+  
+  <a class="secondary-button scale-button">VER MÁS</a>
+</div>

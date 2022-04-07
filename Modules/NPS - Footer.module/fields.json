@@ -1,0 +1,168 @@
+[ {
+  "id" : "c5859d38-103a-95fd-8fa9-047895321b74",
+  "name" : "logo",
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/a96ea4edd25f57ceebdf24ccd414370c.png",
+    "alt" : "a96ea4edd25f57ceebdf24ccd414370c",
+    "loading" : "lazy",
+    "width" : 1336,
+    "height" : 662,
+    "max_width" : 1336,
+    "max_height" : 662
+  }
+}, {
+  "id" : "2c3fa358-6d5e-cd87-6123-7ab498f741ac",
+  "name" : "menu_footer",
+  "label" : "Menu footer",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "1ccff7f7-3ab9-5ad3-d326-d8086ec407c9",
+    "name" : "text_item",
+    "label" : "Text item",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "afd3c6ce-9ad8-b867-aa25-c4e28cdeb3c1",
+    "name" : "link_item",
+    "label" : "Link item",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "link_item" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+}, {
+  "id" : "51e35dd5-25bc-64d7-6a8f-90d7b753d8ca",
+  "name" : "ubicacion",
+  "label" : "Ubicacion",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "2a9859e4-59d6-eea7-ba18-096aacda8880",
+    "name" : "provincia",
+    "label" : "Provincia",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "513abfc0-3291-46ce-2c06-620b8911ce10",
+    "name" : "direccion",
+    "label" : "Direccion",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "34aea6c6-93fc-327b-60ef-fe143cef3f6d",
+    "name" : "cercania",
+    "label" : "Cercania",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "30f5c0e1-5bdb-bb58-5e2c-201483ce3b03",
+    "name" : "localidad",
+    "label" : "Localidad",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : { }
+}, {
+  "id" : "fe6607da-3aef-f070-6121-e6af25c7d3f2",
+  "name" : "icons",
+  "label" : "Icons",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "ec193fb8-5698-f3cc-1e72-e9aaa0e3e6e0",
+    "name" : "icon",
+    "label" : "Icon",
+    "required" : false,
+    "locked" : false,
+    "icon_set" : "fontawesome-5.14.0",
+    "type" : "icon",
+    "default" : { }
+  }, {
+    "id" : "672f4160-c24f-5f84-7d1c-5a763160a9ec",
+    "name" : "icon_link",
+    "label" : "Icon link",
+    "required" : false,
+    "locked" : false,
+    "supported_types" : [ "EXTERNAL", "CONTENT", "FILE", "EMAIL_ADDRESS", "BLOG" ],
+    "type" : "link",
+    "default" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "icon" : { },
+    "icon_link" : {
+      "url" : {
+        "content_id" : null,
+        "type" : "EXTERNAL",
+        "href" : ""
+      },
+      "open_in_new_tab" : false,
+      "no_follow" : false
+    }
+  }
+} ]

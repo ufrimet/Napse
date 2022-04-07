@@ -1,0 +1,90 @@
+[ {
+  "id" : "214bd706-b9d2-2fc8-098c-3fc9e905e386",
+  "name" : "background_image",
+  "label" : "Background image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "ad362a18-f357-bd8b-80df-246f5ebae11d",
+  "name" : "box",
+  "label" : "Box",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "0610f065-7dc7-f0dd-fc9f-06195d3f039c",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "b188622e-4f68-a055-079d-ad79d99a0514",
+    "name" : "separador",
+    "label" : "Separador",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Vector%209.png",
+      "alt" : "Vector 9",
+      "loading" : "lazy",
+      "width" : 36,
+      "height" : 11,
+      "max_width" : 36,
+      "max_height" : 11
+    }
+  }, {
+    "id" : "62bc2a7f-9ecb-4815-9a7c-3894da34c305",
+    "name" : "form",
+    "label" : "Form",
+    "required" : false,
+    "locked" : false,
+    "type" : "form",
+    "default" : {
+      "form_id" : "701e20c3-b237-412d-8c81-7b062255df5e",
+      "response_type" : "inline",
+      "message" : "Gracias por enviar el formulario.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "separador" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Vector%209.png",
+      "alt" : "Vector 9",
+      "loading" : "lazy",
+      "width" : 36,
+      "height" : 11,
+      "max_width" : 36,
+      "max_height" : 11
+    },
+    "form" : {
+      "form_id" : "701e20c3-b237-412d-8c81-7b062255df5e",
+      "response_type" : "inline",
+      "message" : "Gracias por enviar el formulario.",
+      "gotowebinar_webinar_key" : null,
+      "form_type" : "HUBSPOT"
+    }
+  }
+} ]

@@ -1,0 +1,128 @@
+{% set list = request_contact.list_memberships|pprint %} 
+{% if 219 in list %}
+<style>
+  .thmbImg{
+    display: none;
+  }
+
+  .thmbImgOk{
+    display: block;
+  }
+
+  /*.webinar-video h5{
+  display: none;
+  }*/
+</style>
+{% else %}
+<style>
+  .thmbImg{
+    display: block;
+  }
+
+  .thmbImgOk{
+    display: none;
+  }
+</style>
+{% endif %}
+
+
+
+<div style="  background:url({{ module.background_image.src }});
+            background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;">
+
+  <div class="container webinar-box">
+    <h3>{{ module.titulo_global }}</h3>
+    <img class="separador webinar-separador" src="https://f.hubspotusercontent10.net/hubfs/9130015/Vector%209.png">
+    {% for webinar in module.webinars %}
+    {% set nro = nro + 1 %}
+    <div class="video-hidden video-{{ loop.index }}">
+      <div class="webinar-item">
+        <div class="webinar-video" {% if loop.index is even %} style="order: 1;" {% endif %} >
+          <img class="tag" src="{{ webinar.tags.tag_image }}">
+          <span class="tag-text">{{ webinar.tags.tag_text }}</span>
+          <a class="thmbImgOk" id="thm-{{nro}}"><img src="{{ webinar.thumbnail_image.src }}"></a>
+          <a class="thmbImg"><img src="{{ webinar.thumbnail_image.src }}"></a>
+          <h5>{{ webinar.title }}</h5>
+        </div>
+
+        <div class="webinar-info" {% if loop.index is even %} style="margin: 0 100px 0 0; margin-top: 30px;" {% else %} style="margin-left: 80px; margin-top: 30px;" {% endif %}>
+          <h5>{{ webinar.title }}</h5>
+          <p>{{ webinar.text }}</p>
+          <a {% if 219 in list %} class="thmbImgOk arrow-img" {% else %} class="thmbImg arrow-img" {% endif %} ><img src="https://f.hubspotusercontent10.net/hubfs/9130015/Vector%20(9).png"> {{ webinar.button_text }}</a>
+          <a id="charla-{{nro}}" class="charlaOk arrow-img" ><img src="https://f.hubspotusercontent10.net/hubfs/9130015/Vector%20(9).png"> {{ webinar.button_text }}</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="videoModal-{{nro}}" class="modal-video">
+      <div class="modal-content-video">
+        <span class="close close2">&times;</span>
+        <div class="video-container">
+          {% if webinar.video.player_id %}
+          {% set max_width = webinar.video.size_type == 'auto_custom_max' ? webinar.video.max_width : webinar.video.width %}
+          {% set max_height = webinar.video.size_type == 'auto_custom_max' ? webinar.video.max_height : webinar.video.height %}
+          {% widget_block video_player "embed_player"
+                overrideable=False,
+                type='scriptV4',
+                hide_playlist=True,
+                viral_sharing=False,
+                embed_button=False,
+                full_width={{ webinar.video.size_type == 'auto_full_width' }},
+                width="{{ max_width }}",
+                height="{{ max_height }}",
+                player_id="{{ webinar.video.player_id }}"
+              %}
+          {% widget_attribute "conversion_asset" %}
+          {{ webinar.video.conversion_asset|tojson|safe }}
+          {% end_widget_attribute %}
+          {% end_widget_block %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    {% endfor %}
+    <a href="#" id="loady" class="violet-button">VER MÁS</a>
+  </div>
+
+</div>
+
+
+<div id="webinarModal3" class="webinar-modal">
+  <div class="modal-content-v2">
+    <span class="close1">&times;</span>
+    <h2>{{ module.modal_title }}</h2>
+
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+        region: "na1",
+        portalId: "9130015",
+        formId: "d03f5c3e-4a9e-41e1-80a1-a2388fd4cc85",
+        onFormSubmit: function($form) {
+          console.log("entro al submit");
+          setTimeout(function(){ 
+            console.log("entro al timeout");
+            $("#webinarModal3").hide();
+          }, 5000);
+
+          $(".webinar-video .thmbImg").hide();
+          $(".webinar-video .thmbImgOk").css("display", "block");
+          $(".webinar-info .thmbImg").hide();
+          $(".webinar-info .charlaOk").css("display", "block");
+        },
+        onFormReady: function($form){
+          $('.legal-consent-container input[type="checkbox"]').prop('checked', true).change();
+          console.log("entro al ready");
+        }
+      });
+    </script>
+
+  </div>
+</div>

@@ -1,0 +1,26 @@
+
+
+
+
+{# 2107 - Uriel Frimet #}
+
+<section class="big-footer-lp">
+    <div class="container">
+        <h2>{{ module.text }}</h2>
+        <a class="main-button" href="{{ module.link_button.url.href }}">{{ module.button_text }}</a>
+        <div class="footer-line"></div>
+        <div class="logos">
+            {% for logo in module.logos %}
+                <img src="{{ logo.logo.src }}">
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+<style>
+    .big-footer-lp{ background-color: {{ module.background_color.color }}; }
+
+    .footer-line{ background: {{ module.linear_gradient }}; }
+
+</style>

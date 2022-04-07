@@ -1,0 +1,23 @@
+[ {
+  "id" : "3e9d17b0-0764-c92b-45d8-2981b7e2c512",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Gestión y experiencia"
+}, {
+  "id" : "797d262d-db4d-1f26-f65e-2196ac0d9b90",
+  "name" : "color_field",
+  "label" : "Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#EE462E",
+    "opacity" : 100
+  }
+} ]

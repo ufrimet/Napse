@@ -1,0 +1,63 @@
+[ {
+  "id" : "ef991a41-9116-7e70-f35e-35a270e4802c",
+  "name" : "blog_field",
+  "label" : "Blog",
+  "required" : false,
+  "locked" : false,
+  "type" : "blog",
+  "default" : 40738398591
+}, {
+  "id" : "63be88bd-0964-14ef-b290-0e8916be4c67",
+  "name" : "tag_posts",
+  "label" : "Tag posts",
+  "help_text" : "Etiqueta de los posts. La nomenclatura seria por ejemplo: gestión-y-experiencia para la etiqueta (tag) Gestión y Experiencia",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "gestión-y-experiencia"
+}, {
+  "id" : "2766a7c3-799e-314e-cc3a-6892901c87b0",
+  "name" : "separador_color",
+  "label" : "Separador Color",
+  "required" : false,
+  "locked" : false,
+  "type" : "color",
+  "default" : {
+    "color" : "#EE462E",
+    "opacity" : 100
+  }
+}, {
+  "id" : "7e308bca-5563-22ca-284a-12daf8031c4b",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text",
+  "default" : "Gestión y experiencia"
+}, {
+  "id" : "88d133fe-ec46-7e46-e947-b7eef22300d0",
+  "name" : "draw_title",
+  "label" : "Draw Title",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/tag-title-yellow.svg",
+    "alt" : "tag-title-yellow",
+    "loading" : "lazy",
+    "width" : 400,
+    "height" : 400,
+    "max_width" : 400,
+    "max_height" : 400
+  }
+} ]

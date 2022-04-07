@@ -1,0 +1,1 @@
+//var save_tag = $(".topic-link")[0].innerHTML.toLowerCase().replace(/ /g, "-");

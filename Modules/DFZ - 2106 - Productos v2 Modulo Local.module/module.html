@@ -1,0 +1,121 @@
+<style>
+  .box-container{
+    max-width: 1200px !important;
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-container .separador{
+    width: 25px;
+    height: 8px;
+    margin: 25px 0px 10px;
+  }
+  .box-container h3{
+    margin-top: 20px;
+  }
+  .folders-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 60px 0 20px 0;
+    position: relative;
+  }
+  .folder{
+    box-sizing: border-box;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    position: relative;
+    box-shadow: 0 0 5px gray;
+    margin: 40px 10px;
+  }
+  .side-image{
+    width: 35%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+    position: relative;
+  }
+  .side-image img {
+    position: relative;
+    width: 90%;
+    z-index: 2;
+    height: fit-content;
+  }
+  .img-folder{
+    width: 100% !important;
+    height: 219px !important;
+    position: absolute !important;
+    top: -20px;
+    z-index: 1 !important;
+    filter: drop-shadow(0px 0px 5px gray);
+    -webkit-filter: drop-shadow(0px 0px 5px gray);
+  }
+  .side-text{
+    width: 65%;
+    background: linear-gradient(252.08deg, #411E5A 60.45%, #A36EC9 142.67%);
+    color: white;
+    padding: 20px;
+    border-radius: 4px;
+  }
+  .side-text p{
+    text-align: start;
+    font-size: 15px;
+    height: 180px;
+    overflow: hidden;
+  }
+  .box-container a{
+    font-weight: 700 !important;
+  }
+  @media(max-width:768px){
+    .folder{
+      height: 220px;
+    }
+    .img-folder{
+      height: 239px !important;
+    }
+    .side-text p{
+      font-size: 13px;
+    }
+    .side-image img {
+      height: 55px;
+    }
+  }
+</style>
+<div style="  background:url({{ module.background_image.src }});
+              background-size: cover;
+              -o-background-size: cover;
+              -moz-background-size: cover;
+              -webkit-background-size: cover;
+              background-repeat: no-repeat;
+              min-height: 600px;
+              display: flex;
+              justify-content: center;
+              padding: 100px 0;">
+  <div class="box-container">
+    <h3>{{ module.title }}</h3>
+    <img class="separador" src="{{ module.separador.src }}">
+      <div class="folders-container">
+        {% for box in module.carpetas %}
+        <div class="folder">
+          <div class="side-image">
+            <img class="img-folder" src="https://f.hubspotusercontent10.net/hubfs/9130015/Union-1.png" alt="back folder"/>
+            <img src="{{ box.imagen.src }}" alt=" {{ box.imagen.alt }}"/>
+          </div>
+          <div class="side-text">
+            {{ box.texto }}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+    {% if module.button_text %}
+    <a class="main-button" href="{{ module.url_button.href }}">{{ module.button_text }}</a>
+    {% endif %}
+
+  </div>
+</div>

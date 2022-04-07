@@ -1,0 +1,133 @@
+<style>
+  .soluciones-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .soluciones-container h3{
+    color: white !important;
+  }
+  .soluciones-container .separador{
+    width: 25px;
+    height: 8px;
+    margin: 25px 0px 10px;
+  }
+  .slider-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .solucion-box{
+    width: 90%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .solucion-box:nth-child(odd){
+    justify-content: flex-start;
+  }
+  .solucion-box:nth-child(even){
+    justify-content: flex-end;
+  }
+  .solucion-imagen{
+    width: 180px;
+    height: 180px;    
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0 60px;
+    position: relative;
+  }
+  .solucion-text{
+    width: 50%;
+    position: relative;
+  }
+  .solucion-box:nth-child(even) .solucion-text{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-end !important;
+    order: 1;
+  }
+  .solucion-box:nth-child(even) .solucion-imagen{
+    order: 2;
+  }
+  .solucion-imagen img{
+    width: 80%;
+  }
+  .solucion-text h4{
+    color: white;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+  }
+  .solucion-text p{
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+  }
+  .solucion-text .main-button{
+    width: 100px;
+    font-weight: 700;
+    height: 40px !important;
+    margin: 20px 0 0 0;
+  }
+  @media(max-width:768px){
+    .solucion-box:nth-child(odd), .solucion-box:nth-child(even){
+      justify-content: center;
+    }
+    .solucion-imagen{
+      margin: 30px;
+    }
+    .solucion-text{
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center !important;
+      text-align: center;
+    }
+    .solucion-box:nth-child(even) .solucion-text{
+      align-items: center !important;
+    }
+    .solucion-box:nth-child(odd){
+      flex-wrap: wrap;
+    }
+    .solucion-box:nth-child(even){
+      flex-wrap: wrap-reverse;
+    }
+  }
+</style>
+<div style="  background:url({{ module.background_image.src }});
+            background-size: cover;
+            -o-background-size: cover;
+            -moz-background-size: cover;
+            -webkit-background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 600px;
+            display: flex;
+            justify-content: center;
+            padding: 100px 0; ">
+  <div class="soluciones-container">
+    <h3>{{ module.box.title }}</h3>
+    <img class="separador" src="{{ module.box.separador.src }}">
+    {% if module.box.subtitle %} <h2>{{ module.box.subtitle }}</h2> {% endif %}
+
+    <div class="slider-container">
+      {% for row in module.soluciones %}
+      <div class="solucion-box">
+        <div class="solucion-imagen">
+          <img src="{{ row.image_field.src }}" alt="{{ row.image_field.alt }}"/>
+        </div>
+        <div class="solucion-text">
+          <h4>{{ row.titulo }}</h4>
+          {{ row.texto }}
+          <a class="main-button">{{ row.texto_cta }}</a>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

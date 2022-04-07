@@ -1,0 +1,19 @@
+<hr>
+<div style="background:url({{ module.background_image.src }});
+              background-size: cover;
+              -o-background-size: cover;
+              -moz-background-size: cover;
+              -webkit-background-size: cover;
+              background-repeat: no-repeat;
+              height: 600px;
+              display: flex;
+              justify-content: center;">
+  <div class="box box-hero container">
+    <h1>{{ module.box.title }}</h1>
+    <h2>{{ module.box.subtitle }}</h2>
+    
+    {% if module.box.button_text %}
+      <a class="main-button scale-button big-button" href="{{ module.box.link_button.url.href }}">{{ module.box.button_text }}</a>
+    {% endif %}
+  </div>
+</div>

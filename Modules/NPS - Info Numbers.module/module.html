@@ -1,0 +1,94 @@
+<style>
+  .box-icons{
+    max-width: 800px !important;
+    width: 100% !important;
+  }
+  .box .separador{
+    width: 25px;
+    height: 8px;
+    margin: 25px 0px 10px;
+  }
+  .box-icons h2{
+    font-weight: 300;
+    font-size: 25px;
+    color: black;
+    margin: 25px 0px;
+  }
+  .box-icons h3{
+    margin-top: 20px;
+  }
+  .icons{
+    display: flex;
+    margin: 30px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icon{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 215px;
+  }
+  .icons .icon h4{
+    font-family: "Gotham";
+    font-weight: 200 !important;
+  }
+  .icons .icon h5{
+    font-size: 68px;
+    font-weight: 700;
+    background: -webkit-linear-gradient(#EE462E, #FCB713);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .box-icons img{
+    width: 125px;
+    height: 125px;
+  }
+  
+  .box-icons .icons .icon h4 strong {
+    font-size: 1.1rem;
+  }
+  @media only screen and (max-width: 768px) {
+
+    .icons{
+      flex-direction: column;
+    }
+    .icon{
+     margin: 20px 0;
+    }
+    .box-icons h3 {
+      font-size: 35px; 
+    }
+
+  }
+</style>
+<div style="  background:url({{ module.background_image.src }});
+              background-size: cover;
+              -o-background-size: cover;
+              -moz-background-size: cover;
+              -webkit-background-size: cover;
+              background-repeat: no-repeat;
+              min-height: 600px;
+              display: flex;
+              justify-content: center;">
+  <div class="box box-icons container">
+    <h3>{{ module.box.title }}</h3>
+    <img class="separador" src="{{ module.box.separador.src }}">
+    
+    <div class="icons numbers">
+      {% for icon in module.icons %}
+      <div class="icon">
+        <h5> {{ icon.number }} </h5>
+        <h4>{{ icon.text }}</h4>
+      </div>
+      {% endfor %}
+
+      {% if module.button.text_button %}
+      <a class="main-button" href="{{ module.button.link_button.url.href }}">{{ module.button.text_button }}</a>
+      {% endif %}
+    </div>
+  </div>
+</div>

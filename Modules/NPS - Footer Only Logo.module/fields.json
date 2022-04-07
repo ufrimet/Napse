@@ -1,0 +1,41 @@
+[ {
+  "id" : "3193c6b6-b624-786e-7f18-b4f7eae576cb",
+  "name" : "logo",
+  "label" : "Logo",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/a96ea4edd25f57ceebdf24ccd414370c.png",
+    "alt" : "a96ea4edd25f57ceebdf24ccd414370c",
+    "loading" : "lazy",
+    "width" : 1336,
+    "height" : 662,
+    "max_width" : 1336,
+    "max_height" : 662
+  }
+}, {
+  "id" : "14a53ca9-7f95-41bc-96da-811d3341fbc1",
+  "name" : "arrow",
+  "label" : "Arrow",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Vector.png",
+    "alt" : "Vector",
+    "loading" : "lazy",
+    "width" : 28,
+    "height" : 28,
+    "max_width" : 28,
+    "max_height" : 28
+  }
+} ]

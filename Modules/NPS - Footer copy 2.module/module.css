@@ -1,0 +1,70 @@
+.footer{
+  flex-direction: row !important;
+  justify-content: space-between;
+  padding-top: 25px !important;
+  flex-flow: wrap;
+}
+
+.informacion-contacto,
+.mapa-sitio{
+  display: flex;
+  flex-direction: column;
+}
+
+.contacto-footer ul li:first-child,
+.informacion-contacto ul li:first-child,
+.mapa-sitio ul li:first-child{
+ font-weight: 700;
+ color: #411E5A;
+ font-size: 20px;
+ margin-bottom: 20px;
+}
+
+.informacion-contacto ul li,
+.mapa-sitio ul li{
+  font-size: 18px; 
+  font-weight: 400;
+  margin: 8px 0px;
+}
+
+.mapa-sitio ul li:not(:first-child) a{
+  color: #3D3D3D;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.icons-ul{
+  display: flex;
+  flex-direction: row;
+}
+
+.icons-ul li:not(:first-child){
+  margin: 0px 12px;
+}
+
+.icons-ul li:first-child{
+  font-size: initial !important;
+  margin-right: 12px;
+}
+
+.icons-ul li a{
+  color: #63C3D1 !important;
+}
+
+.bottom-form{
+  background-color: #C4C4C4;
+}
+
+.bottom-form .container{
+  padding: 16px 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .footer div{
+    flex-basis: 100%; 
+  }
+  
+}

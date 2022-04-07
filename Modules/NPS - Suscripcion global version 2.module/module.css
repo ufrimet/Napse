@@ -1,0 +1,260 @@
+.suscription-box{
+  display: flex;
+  align-items: center;
+  flex-direction: row !important;
+}
+
+.title-suscription{
+  display: flex;
+  align-items: center;
+}
+
+.title-suscription img{
+  margin-right: 15px;
+}
+
+.title-suscription span{
+  color: white;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.suscription-box .suscription .hs-form{
+  display: flex;
+}
+
+.suscription input{
+  width: 100%;
+}
+
+.suscription input[type=submit]{
+  width: 114px;
+  height: 36px;
+  background: #63C3D1;
+  margin-left: 20px;
+}    
+
+.suscription form{
+  margin-left: 25px;
+  max-width: 100%;
+  flex-wrap: nowrap;
+}
+
+.suscription form .hs-submit{
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.suscription form .input{
+  margin-right: 8px !important;
+}
+
+.hs-error-msgs{
+  position: absolute;
+}
+
+.tyc{
+  color: white;
+  position: absolute;
+  margin: 15px 0 0 30px;
+}
+
+.tyc a{
+  color: #63C3D1;
+}
+
+.submitted-message{
+  margin: 10px 0 0 25px;
+}
+
+.submitted-message p{
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  
+ .suscription-box{
+    flex-direction: column !important;
+    padding: 20px !important;
+  }
+  
+  .suscription form{
+    flex-direction: column;
+  }
+  
+  .suscription input[type=submit] {
+    margin-left: 0px; 
+  }
+  
+  .tyc{
+    position: relative;
+  }
+  
+}
+
+
+/* VERSION 2 */
+
+.container-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F2F2F2;
+}
+
+.container-form a{
+  color: #6e4b87;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.suscription-box2{
+  height: 170px;
+  background-color: #63c3d1;
+  border-radius: 50px 13px 50px;
+  padding: 10px 25px !important;
+}
+
+.suscription-box2 .form-columns-3{
+  display: flex;
+}
+
+.suscription-box2 .suscription,
+.suscription-box2 .title-suscription{
+  margin-bottom: 35px;
+}
+
+.suscription-box2 .title-suscription span{
+  color: #411e5a;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.suscription-box2 .input{
+  width: 100%;  
+}
+
+.suscription-box2 .input:nth-child(2),
+.suscription-box2 .input:nth-child(3){
+    /*margin-left: 5px !important;*/
+}
+.suscription-box2 input[type=text],
+.suscription-box2 input[type=email],
+.suscription-box2 select{
+  border-radius: 7px;
+  height: 50px;
+  padding: 0 15px;
+  border: 0;
+  width: 220px !important;
+  font-weight: 300;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+}
+
+.suscription-box2 input[type=submit]{
+  background: #411e5a;
+  text-transform: lowercase;
+  margin-left: 0px;
+  width: 100px !important;
+}
+
+.suscription-box2 .hs-email,
+.suscription-box2 .hs-industry,
+.suscription-box2 .hs-firstname{
+  margin-left: 10px; 
+}
+
+.suscription-box2 .tyc span{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.suscription-box2 .tyc a{
+  color: #411e5a;
+  text-decoration: underline;
+  font-weight: 300;
+}
+
+.suscription-box2 .tyc{
+  margin: 20px 0px 0px 35px !important;
+}
+
+.suscription-box2 .hs-error-msgs {
+  margin: -5px 0 10px 0 !important;
+}
+
+.suscription-box2 .hs-error-msgs label{
+  color: #3a1e4b;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .container-form{
+    padding: 0 15px;
+  }
+      
+  .title-suscription span br{
+    /*display: none;*/
+  }
+  
+  .suscription-box2 {
+    height: auto;
+    border-radius: 20px 13px 30px;
+  }
+  
+  .suscription-box2 .form-columns-3{
+    flex-direction: column;
+  }
+  
+  .suscription-box2 form{
+    flex-direction: column;
+  }
+  
+  .suscription-box2 form .hs-submit{
+    margin-top: 20px;
+  }
+  
+  .suscription-box2 .hs-email,
+  .suscription-box2 .hs-industry,
+  .suscription-box2 .hs-firstname{
+    margin-left: 0px; 
+    width: 100% !important;
+  }
+  
+  .suscription-box2 .hs-error-msgs{
+    margin: -10px 0 10px 0 !important;
+  }
+  
+  .suscription-box2 .tyc{
+    margin: 20px 0px 0px 25px !important;
+  }
+  
+  .suscription-box2 .title-suscription {
+    margin-bottom: 0px;
+    margin-top: 35px;
+  }
+  
+  .suscription-box2 .suscription {
+    margin-bottom: 0px;
+  }
+  
+}
+
+@media only screen and (max-width: 900px) {
+ 
+  .suscription-box2 input[type=text],
+  .suscription-box2 input[type=email],
+  .suscription-box2 select{
+    width: 100% !important; 
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 768px){
+  .title-suscription span br{ display: none;}
+}

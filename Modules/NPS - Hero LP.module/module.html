@@ -1,0 +1,26 @@
+<div class="hero-class" style="background:url({{ module.background_image.src }});
+              background-size: cover;
+              -o-background-size: cover;
+              -moz-background-size: cover;
+              -webkit-background-size: cover;
+              background-repeat: no-repeat;
+              display: flex;
+              justify-content: center;
+              background-position: bottom left;">
+  <div class="box box-hero container alignment-box">
+    <img src="{{ module.box.logo.src }}">
+    <h1>{{ module.box.title }}</h1>
+    <h2>{{ module.box.subtitle }}</h2>
+    <a class="main-button scale-button" href="{{ module.box.button.link_button.url.href }}">{{ module.box.button.text_button }}</a>
+  </div>
+</div>
+
+<button onclick="topFunction()" id="scrollTopBtn" title="Go to top"><img src="https://f.hubspotusercontent10.net/hubfs/9130015/Vector.png"></button>
+
+<script>
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>

@@ -1,0 +1,118 @@
+.padding-form{
+  padding: 60px 20px !important;
+}
+
+.webinar-listing-form .hs_tiene_ecommerce_{
+  justify-content: center;
+}
+
+.webinar-listing-form .hs_tiene_ecommerce_ ul{
+  display: flex;
+  margin: 0 15px;
+}
+
+#alertDangerStep2,
+#alertDanger{
+  display: none;
+  color: #e55454;
+  margin-top: 10px;
+}
+
+.success-tick,
+.prev-button{
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 768px){
+  .webinar-listing-form .hs_cantidad_de_tiendas,
+  .webinar-listing-form .hs_cantidad_promedio_de_pdv_pos_por_tienda,
+  .webinar-listing-form .hs_cantidad_promedio_de_transacciones_mensuales,
+  .webinar-listing-form .hs_tiene_ecommerce_,
+  .webinar-listing-form .hs_message,
+  .webinar-listing-form .legal-consent-container,
+  .webinar-listing-form .hs_recaptcha,
+  .webinar-listing-form .hs_submit {
+    display: none;
+  }
+
+  .hs-error-msg{
+    display: none;
+  }
+
+  .hs_cantidad_de_tiendas{
+    width: 100% !important;
+  }
+
+  .progress-bar{
+    display: flex;
+    margin: 20px 0;
+  }
+
+  .progress-bar .third-circle,
+  .progress-bar .second-circle,
+  .progress-bar .first-circle{
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position : relative; 
+    -webkit-transition : border 3000ms ease-out; 
+    -moz-transition : border 3000ms ease-out;
+    -o-transition : border 3000ms ease-out;
+  }
+
+  .progress-bar .third-circle.middle-stage,
+  .progress-bar .second-circle.middle-stage{
+    background-color: transparent;
+  }
+
+  .progress-bar .second-circle.filled,
+  .progress-bar .first-circle.filled{
+    border: 3px solid #FFB914;  
+  }
+
+  .progress-bar .third-circle,
+  .progress-bar .second-circle{
+    background-color: white;
+  }
+
+  .progress-bar .second-line,
+  .progress-bar .first-line{
+    border-top: 3px solid white;
+    width: 100px;
+    margin-top: 9px;
+    position : relative; 
+    -webkit-transition : border 3000ms ease-out; 
+    -moz-transition : border 3000ms ease-out;
+    -o-transition : border 3000ms ease-out;
+  }
+
+  .progress-bar .second-line.filled,
+  .progress-bar .first-line.filled{
+    border-top: 3px solid #FFB914;  
+  }
+
+  .submitted-message p{
+    font-size: 1.4rem;
+  }
+
+}
+
+@media only screen and (min-width: 1366px){
+  .webinar-listing-form h1{
+    font-size: 70px;
+  }
+
+}
+
+@media only screen and (min-width: 1080px){
+  
+  .next-button{
+    display: none;
+  }
+
+
+}

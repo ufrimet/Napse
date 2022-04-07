@@ -1,0 +1,122 @@
+<style>
+
+  .hero-class .container .img-video-div{
+    max-width: 600px;
+    width: 100%;
+  }
+
+</style>
+
+{% set list = request_contact.list_memberships|pprint %}
+{% if 219 in list %} 
+<style>  
+  .video-list{
+    display: block;
+  }
+  
+  .hero-class .container .img-video-div img{
+    display: none;
+  }
+</style>
+{% else %}
+<style>
+  /*.modal {
+    display: block; 
+  }*/
+  
+  .video-list{
+    display: none;
+  }
+  
+  .hero-class .container .img-video-div img{
+    display: block;
+  }
+  
+</style>
+<script>
+
+</script>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>{{ module.modal_title }}</h2>
+    
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+    <script>
+    hbspt.forms.create({
+        region: "na1",
+        portalId: "9130015",
+        formId: "d03f5c3e-4a9e-41e1-80a1-a2388fd4cc85",
+        onFormSubmit: function($form){
+          setTimeout(function(){ 
+              $("#myModal").hide();
+          }, 5000);
+          document.getElementsByClassName("img-fixed")[0].style.display = "none";
+          document.getElementsByClassName("video-list")[0].style.display = "block";
+        }
+    });
+    </script>
+    
+  </div>
+</div>
+{% endif %}
+
+<div class="hero-class" style="background:url({{ module.background_image.src }}) no-repeat center;
+                               background-size: cover;
+                               -o-background-size: cover;
+                               -moz-background-size: cover;
+                               -webkit-background-size: cover;
+                               display: flex;
+                               flex-direction: column;
+                               align-items: center;">
+  <div class="container al-ju-center">
+    <h1>{{ module.title }}</h1>
+    <h2>{{ module.subtitle }}</h2>
+    <div class="img-video-div">
+      <a id="imgFixed" class="img-fixed"><img src="{{ module.fixed_image.src }}"></a>
+      <div class="video-list">
+        {% if module.videoplayer_field.player_id %}
+          {% set max_width = module.videoplayer_field.size_type == 'auto_custom_max' ? module.videoplayer_field.max_width : module.videoplayer_field.width %}
+          {% set max_height = module.videoplayer_field.size_type == 'auto_custom_max' ? module.videoplayer_field.max_height : module.videoplayer_field.height %}
+          {% widget_block video_player "embed_player"
+            overrideable=False,
+            type='scriptV4',
+            hide_playlist=True,
+            viral_sharing=False,
+            embed_button=False,
+            full_width={{ module.videoplayer_field.size_type == 'auto_full_width' }},
+            width="{{ max_width }}",
+            height="{{ max_height }}",
+            player_id="{{ module.videoplayer_field.player_id }}"
+          %}
+            {% widget_attribute "conversion_asset" %}
+              {{ module.videoplayer_field.conversion_asset|tojson|safe }}
+            {% end_widget_attribute %}
+          {% end_widget_block %}
+        {% endif %}
+      </div>
+    </div>
+    <a id="mainButton" class="main-button">{{ module.button_text }}</a>
+    
+  </div>
+</div>
+
+<div id="contactModal" class="modal">
+
+  <div class="modal-content">
+    <span class="close close-contacto">&times;</span>
+    <h2>{{ module.button_text }}</h2>
+    <!--[if lte IE 8]>
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+    <script>
+      hbspt.forms.create({
+      region: "na1",
+      portalId: "9130015",
+      formId: "ab721d8a-8b78-4118-91e1-c232d1a5e045"
+    });
+    </script>
+  </div>
+
+</div>

@@ -1,0 +1,54 @@
+<div class="contenedor-form">
+  
+  <div class="box box-suscribe container padding-form">
+    <h1>{{ module.box.title }}</h1>
+    <img class="separador" src="{{ module.box.separador.src }}">
+    <div class="progress-bar">
+      <div class="first-circle"></div> 
+      <div class="first-line"></div>
+
+      <div class="second-circle"></div> 
+      <div class="second-line"></div>
+
+      <div class="third-circle"></div> 
+    </div>
+    
+    <img class="success-tick" src="https://f.hubspotusercontent10.net/hubfs/9130015/Iconos-46%201.png">
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+    <script>
+    hbspt.forms.create({
+    region: "na1",
+    portalId: "9130015",
+    formId: "ab721d8a-8b78-4118-91e1-c232d1a5e045",
+      onFormSubmit: function($form){
+        $(".success-tick").show();
+        $(".prev-button").show();
+        $(".progress-bar").hide();
+        $(".separador").hide();
+        $(".box-suscribe h1").hide();
+      }
+    });
+    </script>
+    <a class="white-button next-button">SIGUIENTE</a>
+    <a class="white-button prev-button">VOLVER</a>
+    <span id="alertDanger">Hay un error en los campos. Chequeá que este completo el nombre, apellido, haya un mail válido (SOLO CORPORATIVOS) y un numero de telefono mayor a 6 dígitos</span>
+    <span id="alertDangerStep2">Hay un error en los campos.</span>
+  </div>
+  
+</div>
+
+<style>
+  .contenedor-form{
+    background:url({{ module.background_image.src }});
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+</style>

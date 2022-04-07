@@ -1,0 +1,39 @@
+[ {
+  "id" : "04dafd4a-7067-0bab-51e2-0a6b7b135628",
+  "name" : "title",
+  "label" : "Title",
+  "required" : false,
+  "locked" : false,
+  "validation_regex" : "",
+  "allow_new_line" : false,
+  "show_emoji_picker" : false,
+  "type" : "text"
+}, {
+  "id" : "ed05c8ad-8f67-64d9-f288-dbd4289d8a59",
+  "name" : "separador",
+  "label" : "Separador",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/Vector%209.png",
+    "alt" : "Vector 9",
+    "loading" : "lazy",
+    "width" : 36,
+    "height" : 11,
+    "max_width" : 36,
+    "max_height" : 11
+  }
+}, {
+  "id" : "ef991a41-9116-7e70-f35e-35a270e4802c",
+  "name" : "blog_field",
+  "label" : "Blog",
+  "required" : false,
+  "locked" : false,
+  "type" : "blog",
+  "default" : 40738398591
+} ]

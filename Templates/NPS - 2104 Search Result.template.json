@@ -1,0 +1,203 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 27,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Napse/CSS/Style.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "<link rel=\"preload\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\">\n<noscript><link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css\"></noscript>\n\n<style>\n  .searching-container .row-fluid{\n    display: flex;\n    justify-content: center;\n  }\n  .hs-search-results__listing{\n    width: 100%;\n  }\n  .hs-search-results__listing li{\n    width: 95%;\n    max-width: 800px;\n    margin: 20px 0;\n    border-bottom: 1px solid gray;\n  }\n  .hs-search-results__featured-image{\n    display: none;\n  }\n  .hs-search-results__listing li a{\n    width: 100%;\n    color: #3f3f3f;\n    font-weight: bold;\n    font-size: 2.25rem;\n  }\n  .hs-search-results__listing li p{\n    padding: 20px 0 30px 0;\n    width: 100%;\n    font-size: 14px;\n  }\n  .input-search-container form{\n    width: 90%;\n    max-width: 1080px;\n    margin: auto;\n    position: relative;\n  }\n  .input-search-container form input{\n    height: 60px;\n    border-radius: 50px;\n    font-size: 18px;\n    padding: 0 30px;\n  }\n  .input-search-container form button{\n    position: absolute;\n    right: 25px;\n    top: 26px;\n    background: transparent;\n    border: 0px;\n    cursor: pointer;\n  }\n  .input-search-container form button svg{\n    height: 26px;\n  }\n</style>",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_161763343396934",
+        "label" : "NPS - Menu",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Menu",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Menu",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_161772470908024",
+        "label" : "Site Search Input",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "input-search-container",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "background: linear-gradient( 110deg ,#48185b,#7a4a8c); padding: 50px 0;",
+          "wrapping_html" : "",
+          "per_widget_wrapper_html" : "",
+          "overrideable" : true,
+          "widget_name" : "Site Search Input",
+          "schema_version" : 2,
+          "path" : "@hubspot/search_input",
+          "placeholder" : "Busque por palabras claves",
+          "include_search_button" : true
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "input-search-container",
+        "cssStyle" : "background: linear-gradient( 110deg ,#48185b,#7a4a8c); padding: 50px 0;",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_161763397381553",
+        "label" : "Grupo de módulos",
+        "type" : "cell",
+        "params" : {
+          "css_class" : "searching-container",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : false,
+          "per_widget_wrapper_html" : "",
+          "wrapping_html" : ""
+        },
+        "rows" : [ {
+          "0" : {
+            "x" : 0,
+            "w" : 12,
+            "name" : "module_1617728454193171",
+            "label" : "search_results new",
+            "type" : "custom_widget",
+            "params" : {
+              "css_class" : "",
+              "css_id" : "",
+              "css_id_str" : "",
+              "css_style" : "width: 100%; max-width: 1000px; padding: 50px 20px; margin: auto; min-height: 500px;",
+              "wrapping_html" : "",
+              "per_widget_wrapper_html" : "",
+              "overrideable" : true,
+              "widget_name" : "search_results new",
+              "schema_version" : 2,
+              "path" : "/search_results new"
+            },
+            "rows" : [ ],
+            "rowMetaData" : [ ],
+            "cells" : [ ],
+            "cssId" : "",
+            "cssClass" : "",
+            "cssStyle" : "width: 100%; max-width: 1000px; padding: 50px 20px; margin: auto; min-height: 500px;",
+            "styles" : null,
+            "widgets" : [ ]
+          }
+        } ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "searching-container",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_161763378798425",
+        "label" : "NPS - Footer",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Footer copy 2",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Footer copy 2",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

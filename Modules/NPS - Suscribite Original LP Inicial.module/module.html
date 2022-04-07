@@ -1,0 +1,32 @@
+<div class="contenedor-form">
+  
+  <div class="box box-suscribe container padding-form">
+    <h1>{{ module.box.title }}</h1>
+    <img class="separador" src="{{ module.box.separador.src }}">
+    {% form
+      form_to_use="{{ module.box.form.form_id }}"
+      response_response_type="{{ module.box.form.response_type }}"
+      response_message="{{ module.box.form.message }}"
+      response_redirect_id="{{ module.box.form.redirect_id }}"
+      response_redirect_url="{{module.box.form.redirect_url}}"
+      gotowebinar_webinar_key="{{ module.box.form.gotowebinar_webinar_key }}"
+    %}
+  </div>
+  
+</div>
+
+<style>
+  .contenedor-form{
+    background:url({{ module.background_image.src }});
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 850px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+</style>

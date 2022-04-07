@@ -1,0 +1,417 @@
+{
+  "isAvailableForNewContent" : true,
+  "templateType" : 4,
+  "attachedStylesheets" : [ {
+    "type" : "cos_extension_resource",
+    "path" : "/Napse/CSS/Style.css"
+  }, {
+    "type" : "cos_extension_resource",
+    "path" : "/Napse/CSS/Carousel.css"
+  } ],
+  "attachedJs" : [ ],
+  "customHead" : "<link rel=\"preload\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css\" as=\"style\" onload=\"this.onload=null;this.rel='stylesheet'\">\n<noscript><link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css\"></noscript>",
+  "customFooter" : "",
+  "bodyClass" : "",
+  "bodyCss" : "",
+  "bodyEditable" : false,
+  "layoutData" : {
+    "x" : 0,
+    "w" : 12,
+    "name" : "",
+    "label" : "",
+    "type" : "cell",
+    "params" : { },
+    "rows" : [ {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_16160781421596",
+        "label" : "NPS - Menu",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Menu",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Menu",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1616076291476881",
+        "label" : "NPS - Main Hero",
+        "type" : "custom_widget",
+        "params" : {
+          "background_image" : {
+            "alt" : "2703e612858c7715900fcf73adafc078",
+            "height" : 1333,
+            "loading" : "lazy",
+            "max_height" : 1333,
+            "max_width" : 2000,
+            "size_type" : "auto",
+            "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/2703e612858c7715900fcf73adafc078.jpg",
+            "width" : 2000
+          },
+          "box" : {
+            "subtitle" : "Lorem Ipsum is simply dummy text of the printing.",
+            "title" : "Lorem Ipsum"
+          },
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Main Hero",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Main Hero",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1616470315799239",
+        "label" : "NPS - Blog",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "display: none;",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Blog",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "title" : "Últimos blogs",
+          "widget_name" : "NPS - Blog",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "display: none;",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_161643175048045",
+        "label" : "NPS - Casos de exito",
+        "type" : "custom_widget",
+        "params" : {
+          "background_image" : {
+            "alt" : "380db7d46401ceba341265ff0d7fed65",
+            "height" : 1080,
+            "loading" : "lazy",
+            "max_height" : 1080,
+            "max_width" : 1920,
+            "size_type" : "auto",
+            "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/380db7d46401ceba341265ff0d7fed65.png",
+            "width" : 1920
+          },
+          "carousel" : {
+            "carousel_id" : "dfz-carousel-casos"
+          },
+          "casos" : [ {
+            "image_caso" : {
+              "alt" : "e8f259dd2c36d985faa4d86e6886b85f",
+              "height" : 177,
+              "loading" : "lazy",
+              "max_height" : 177,
+              "max_width" : 355,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/e8f259dd2c36d985faa4d86e6886b85f.png",
+              "width" : 355
+            },
+            "paragraph_caso" : "Lorem Ipsum is simply dummy text of the printing."
+          }, {
+            "image_caso" : {
+              "alt" : "aeff99b93cf4b85517916e52ea107636 (1)",
+              "height" : 177,
+              "loading" : "lazy",
+              "max_height" : 177,
+              "max_width" : 355,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/aeff99b93cf4b85517916e52ea107636%20(1).jpg",
+              "width" : 355
+            },
+            "paragraph_caso" : "Lorem Ipsum is simply dummy text of the printing."
+          }, {
+            "image_caso" : {
+              "alt" : "ef172af1ada0b73aa2b817c152e31d31",
+              "height" : 177,
+              "loading" : "lazy",
+              "max_height" : 177,
+              "max_width" : 355,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/ef172af1ada0b73aa2b817c152e31d31.jpg",
+              "width" : 355
+            },
+            "paragraph_caso" : "Lorem Ipsum is simply dummy text of the printing."
+          }, {
+            "image_caso" : {
+              "alt" : "aeff99b93cf4b85517916e52ea107636 (1)",
+              "height" : 177,
+              "loading" : "lazy",
+              "max_height" : 177,
+              "max_width" : 355,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/aeff99b93cf4b85517916e52ea107636%20(1).jpg",
+              "width" : 355
+            },
+            "paragraph_caso" : "Lorem Ipsum is simply dummy text of the printing"
+          } ],
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "display: none;",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Casos de exito",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "title" : "Casos de éxito",
+          "widget_name" : "NPS - Casos de exito",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "display: none;",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1616093974231356",
+        "label" : "NPS - Info Icons",
+        "type" : "custom_widget",
+        "params" : {
+          "background_image" : {
+            "alt" : "7a74eeee0014687b2db81cbf0378596a",
+            "height" : 1080,
+            "loading" : "lazy",
+            "max_height" : 1080,
+            "max_width" : 1920,
+            "size_type" : "auto",
+            "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/7a74eeee0014687b2db81cbf0378596a.png",
+            "width" : 1920
+          },
+          "box" : {
+            "subtitle" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of.",
+            "title" : "Más de 60.000 personas utilizan nuestro servicio"
+          },
+          "css_class" : "custom-icons custom-default",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "icons" : [ {
+            "icon" : {
+              "alt" : "330e7d551516936a52a75029c205d4da",
+              "height" : 401,
+              "loading" : "lazy",
+              "max_height" : 401,
+              "max_width" : 401,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/330e7d551516936a52a75029c205d4da.png",
+              "width" : 401
+            },
+            "text" : "It is a long established"
+          }, {
+            "icon" : {
+              "alt" : "0119ffbacbceecaa26193e0b1075ebb0",
+              "height" : 401,
+              "loading" : "lazy",
+              "max_height" : 401,
+              "max_width" : 401,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/0119ffbacbceecaa26193e0b1075ebb0.png",
+              "width" : 401
+            },
+            "text" : "It is a long established"
+          }, {
+            "icon" : {
+              "alt" : "184142f2e390066bb14ef88407a3ef88",
+              "height" : 501,
+              "loading" : "lazy",
+              "max_height" : 501,
+              "max_width" : 458,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/184142f2e390066bb14ef88407a3ef88.png",
+              "width" : 458
+            },
+            "text" : "It is a long established"
+          }, {
+            "icon" : {
+              "alt" : "cb5a18152722bc7b1b3e878ec9276723",
+              "height" : 501,
+              "loading" : "lazy",
+              "max_height" : 501,
+              "max_width" : 458,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/cb5a18152722bc7b1b3e878ec9276723.png",
+              "width" : 458
+            },
+            "text" : "It is a long established"
+          }, {
+            "icon" : {
+              "alt" : "8f4ea4319cd5beb091375bd693cd4c47",
+              "height" : 501,
+              "loading" : "lazy",
+              "max_height" : 501,
+              "max_width" : 458,
+              "size_type" : "auto",
+              "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/8f4ea4319cd5beb091375bd693cd4c47.png",
+              "width" : 458
+            },
+            "title_icon" : "",
+            "text" : "<p>It is a long established</p>"
+          } ],
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Info Icons",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Info Icons",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "custom-icons custom-default",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_16170815084282847",
+        "label" : "NPS - Slider Nuestros Clientes Global",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Slider Nuestros Clientes Global copy",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Slider Nuestros Clientes Global copy",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "",
+        "label" : "",
+        "type" : "section_delimiter",
+        "params" : { },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    }, {
+      "0" : {
+        "x" : 0,
+        "w" : 12,
+        "name" : "module_1616186476085113",
+        "label" : "NPS - Footer",
+        "type" : "custom_widget",
+        "params" : {
+          "css_class" : "",
+          "css_id" : "",
+          "css_id_str" : "",
+          "css_style" : "",
+          "overrideable" : true,
+          "path" : "/Napse/Modules/NPS - Footer copy 2",
+          "per_widget_wrapper_html" : "",
+          "schema_version" : 2,
+          "widget_name" : "NPS - Footer copy 2",
+          "wrapping_html" : ""
+        },
+        "rows" : [ ],
+        "rowMetaData" : [ ],
+        "cells" : [ ],
+        "cssId" : "",
+        "cssClass" : "",
+        "cssStyle" : "",
+        "styles" : null,
+        "widgets" : [ ]
+      }
+    } ],
+    "rowMetaData" : [ ],
+    "cells" : [ ],
+    "cssId" : "",
+    "cssClass" : "",
+    "cssStyle" : "",
+    "styles" : null,
+    "widgets" : [ ]
+  }
+}

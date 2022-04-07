@@ -1,0 +1,154 @@
+.webinar-box{
+    text-align: center;
+    align-items: center;
+    margin: 60px auto !important;
+}
+
+.webinar-separador{
+    width: 45px;
+    margin-top: 20px !important;
+}
+
+.webinar-box .webinar-item{
+    display: flex;
+    margin: 50px 0;
+}
+
+.webinar-box .webinar-item .webinar-video h5{
+    color: white;
+    position: absolute;
+    margin: -70px 0 0px 20px;
+    font-size: 25px;
+}
+
+.vidyard-player-container{
+    border-radius: 10px;
+}
+
+.vidyard-player-container iframe{
+    filter: brightness(0.65);
+}
+
+.webinar-box .webinar-info{
+    text-align: left;
+    margin-left: 80px;
+}
+
+.webinar-box .webinar-info p{
+    font-family: 'Gotham', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 15px 0;
+}
+
+.webinar-box .webinar-info a{
+    font-weight: 700;
+    font-size: 13px;
+    color: #411e5a;
+}
+
+.webinar-box .webinar-info a.arrow-img img{
+    width: 9px !important;
+    height: 10px !important;
+}
+
+.thmbImgOk img,
+.thmbImg img{
+  width: 500px;
+  height: 250px;
+  border-radius: 12px;
+}
+
+.charlaOk{
+  display: none;
+}
+
+
+.webinar-video .tag{
+  width: 120px;
+  margin: 0px 0px -25px -320px;
+}
+
+.webinar-video .tag-text{
+  margin: 6px 0px 0px -103px;
+  font-size: 15px;
+  color: white;
+  position: absolute;
+}
+
+.video-hidden{display: none;}
+
+@media only screen and (max-width: 768px) {
+  .webinar-info{
+      display: none;
+  }
+
+  .thmbImgOk img,
+  .thmbImg img{
+      width: 100%;
+      max-width: 400px;
+      height: 200px;
+  }
+
+  .webinar-video .tag {
+    margin: 0px 0px -25px -180px;
+  }
+
+  .webinar-box .webinar-item .webinar-video h5 {
+    margin: -40px 0 0px 20px;
+    font-size: 16px;
+  }
+
+  video{
+    width: 100%;
+  }
+}
+
+
+
+/* The Modal (background) */
+.modal-video {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 501; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(250,250,250,0.6); /* Black w/ opacity */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Content/Box */
+.modal-content-video {
+  padding: 20px;
+  width: 100%;
+  max-width: 850px;
+}
+
+.modal-content-video .video-container{ width: 100%; height: auto;}
+
+/* The Close Button */
+.close,
+.close1 {
+  color: white;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus,
+.close:hover,
+.close:focus {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.close2{
+  margin-left: 420px;
+}
+

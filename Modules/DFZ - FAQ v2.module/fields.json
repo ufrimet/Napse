@@ -1,0 +1,85 @@
+[ {
+  "id" : "35fd0283-c061-3f33-daef-52816b227ad9",
+  "name" : "items",
+  "label" : "Items",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : null,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : null
+  },
+  "children" : [ {
+    "id" : "e1aa60aa-ff8d-d2a7-cc98-640dc7610939",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "Pescando.com"
+  }, {
+    "id" : "4f1f4749-6148-fba6-33ee-a21951e76082",
+    "name" : "description",
+    "label" : "Description",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text",
+    "default" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using "
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "title" : "Pescando.com",
+    "description" : "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using "
+  }
+}, {
+  "id" : "040798fb-f85a-719f-acbe-a3138639979d",
+  "name" : "style",
+  "label" : "Style",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "31dadf5e-6909-a960-527a-ff0a8794d277",
+    "name" : "background_color",
+    "label" : "Background Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : null,
+      "opacity" : null
+    }
+  }, {
+    "id" : "d4cc8d73-b5d6-599c-8876-826366487b61",
+    "name" : "text_color",
+    "label" : "Text Color",
+    "required" : false,
+    "locked" : false,
+    "type" : "color",
+    "default" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "background_color" : {
+      "color" : null,
+      "opacity" : null
+    },
+    "text_color" : {
+      "color" : "#000000",
+      "opacity" : 100
+    }
+  }
+} ]

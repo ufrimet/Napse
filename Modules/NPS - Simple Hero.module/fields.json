@@ -1,0 +1,79 @@
+[ {
+  "id" : "8e6b552c-95a9-fd8c-0457-c44907591398",
+  "name" : "background_image",
+  "label" : "Background image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : false,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "",
+    "alt" : null,
+    "loading" : "lazy"
+  }
+}, {
+  "id" : "119e1a79-c5f2-b956-91c5-b240ce472d77",
+  "name" : "box",
+  "label" : "Box",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "c9ec96cf-d2a6-5cc7-625e-aeb4c7273205",
+    "name" : "logo",
+    "label" : "Logo",
+    "required" : false,
+    "locked" : false,
+    "responsive" : true,
+    "resizable" : true,
+    "show_loading" : false,
+    "type" : "image",
+    "default" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/a96ea4edd25f57ceebdf24ccd414370c.png",
+      "alt" : "a96ea4edd25f57ceebdf24ccd414370c",
+      "loading" : "lazy",
+      "width" : 1336,
+      "height" : 662,
+      "max_width" : 1336,
+      "max_height" : 662
+    }
+  }, {
+    "id" : "d4802682-82d8-0f84-6e0f-7276cc5ae624",
+    "name" : "title",
+    "label" : "Title",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  }, {
+    "id" : "c3d4329d-83ac-7910-e0c4-b6aca30dfb83",
+    "name" : "button_text",
+    "label" : "Button text",
+    "required" : false,
+    "locked" : false,
+    "validation_regex" : "",
+    "allow_new_line" : false,
+    "show_emoji_picker" : false,
+    "type" : "text"
+  } ],
+  "tab" : "CONTENT",
+  "expanded" : false,
+  "type" : "group",
+  "default" : {
+    "logo" : {
+      "size_type" : "auto",
+      "src" : "https://f.hubspotusercontent10.net/hubfs/9130015/a96ea4edd25f57ceebdf24ccd414370c.png",
+      "alt" : "a96ea4edd25f57ceebdf24ccd414370c",
+      "loading" : "lazy",
+      "width" : 1336,
+      "height" : 662,
+      "max_width" : 1336,
+      "max_height" : 662
+    }
+  }
+} ]
